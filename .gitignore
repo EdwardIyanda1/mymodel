@@ -1,7 +1,7 @@
 venv
 __pycache__/
 instructions.jsonl
-./vscode
+vscode
 mymodel.py
 download_data.py
 chat.py
