@@ -4,6 +4,7 @@
   "rows_excluded_unresolved": 142,
   "columns": 14,
   "missing_values": 0,
+  "duplicate_ticket_ids": 0,
   "date_start": "2026-01-08",
   "date_end": "2026-09-02",
   "mean_response_hours": 3.09,
@@ -13,5 +14,17 @@
   "mean_elapsed_hours_unresolved_tickets": 28.42,
   "resolved_rate_percent": 71.6,
   "response_sla_rate_percent": 95.6,
+  "response_vs_resolution_correlation_resolved_only": -0.16,
+  "monthly_ticket_volume": {
+    "1": 51,
+    "2": 49,
+    "3": 64,
+    "4": 77,
+    "5": 52,
+    "6": 68,
+    "7": 72,
+    "8": 59,
+    "9": 8
+  },
   "note": "Resolution-time figures use Resolved=='Yes' tickets only. For the remaining tickets, Resolution_Time_Hrs reflects hours elapsed so far on a still-open ticket, not a finished duration, so it is reported separately rather than averaged in."
 }

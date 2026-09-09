@@ -77,12 +77,15 @@ def save_exploration(df: pd.DataFrame, resolved_df: pd.DataFrame, output_dir: Pa
     output_dir.mkdir(parents=True, exist_ok=True)
     n_total = len(df)
     n_resolved = len(resolved_df)
+    response_resolution_corr = resolved_df[["Response_Time_Hrs", TARGET]].corr().iloc[0, 1]
+    monthly_volume = df.groupby("month").size().to_dict()
     summary = {
         "rows_total": int(n_total),
         "rows_resolved_used_for_modeling": int(n_resolved),
         "rows_excluded_unresolved": int(n_total - n_resolved),
         "columns": int(df.shape[1]),
         "missing_values": int(df.isna().sum().sum()),
+        "duplicate_ticket_ids": int(df["Ticket_ID"].duplicated().sum()),
         "date_start": str(df["Date"].min().date()),
         "date_end": str(df["Date"].max().date()),
         "mean_response_hours": round(float(df["Response_Time_Hrs"].mean()), 2),
@@ -96,6 +99,9 @@ def save_exploration(df: pd.DataFrame, resolved_df: pd.DataFrame, output_dir: Pa
         ),
         "resolved_rate_percent": round(float(df["Resolved"].eq("Yes").mean() * 100), 1),
         "response_sla_rate_percent": round(float(df["Response_SLA"].eq("Within 8 Hours").mean() * 100), 1),
+        # Weak/negative -> a fast first response does not predict a fast resolution.
+        "response_vs_resolution_correlation_resolved_only": round(float(response_resolution_corr), 3),
+        "monthly_ticket_volume": {int(k): int(v) for k, v in monthly_volume.items()},
         "note": (
             "Resolution-time figures use Resolved=='Yes' tickets only. For the "
             "remaining tickets, Resolution_Time_Hrs reflects hours elapsed so far "
@@ -106,7 +112,7 @@ def save_exploration(df: pd.DataFrame, resolved_df: pd.DataFrame, output_dir: Pa
     (output_dir / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
     sns.set_theme(style="whitegrid")
-    fig, axes = plt.subplots(2, 3, figsize=(18, 9))
+    fig, axes = plt.subplots(2, 4, figsize=(24, 9))
 
     sns.countplot(
         data=df, y="Issue_Category", order=df["Issue_Category"].value_counts().index,
@@ -125,6 +131,13 @@ def save_exploration(df: pd.DataFrame, resolved_df: pd.DataFrame, output_dir: Pa
     )
     axes[0, 2].set_title("Resolution_Time_Hrs by status\n(Pending/In Progress = time elapsed so far, not resolved)")
 
+    monthly_counts = df.groupby("month").size().reindex(range(1, 13)).dropna()
+    axes[0, 3].bar(monthly_counts.index, monthly_counts.values, color="#0891b2")
+    axes[0, 3].set_title("Ticket volume by month")
+    axes[0, 3].set_xlabel("Month")
+    axes[0, 3].set_ylabel("Tickets opened")
+    axes[0, 3].set_xticks(list(monthly_counts.index))
+
     sns.histplot(data=resolved_df, x=TARGET, bins=25, kde=True, ax=axes[1, 0], color="#d97706")
     axes[1, 0].set_title("Resolution-time distribution (resolved tickets only)")
 
@@ -139,6 +152,14 @@ def save_exploration(df: pd.DataFrame, resolved_df: pd.DataFrame, output_dir: Pa
         errorbar=None,
     )
     axes[1, 2].set_title("Mean resolution time by department (resolved tickets only)")
+
+    sns.regplot(
+        data=resolved_df, x="Response_Time_Hrs", y=TARGET, ax=axes[1, 3],
+        scatter_kws={"color": "#be185d", "alpha": 0.5, "s": 20}, line_kws={"color": "#1f2937"},
+    )
+    axes[1, 3].set_title(
+        f"Response vs. resolution time (resolved only)\ncorrelation = {response_resolution_corr:.2f} -- fast response doesn't imply fast resolution"
+    )
 
     fig.tight_layout()
     fig.savefig(output_dir / "helpdesk_overview.png", dpi=180, bbox_inches="tight")
