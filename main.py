@@ -112,55 +112,87 @@ def save_exploration(df: pd.DataFrame, resolved_df: pd.DataFrame, output_dir: Pa
     (output_dir / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
     sns.set_theme(style="whitegrid")
-    fig, axes = plt.subplots(2, 4, figsize=(24, 9))
-
-    sns.countplot(
-        data=df, y="Issue_Category", order=df["Issue_Category"].value_counts().index,
-        ax=axes[0, 0], color="#2563eb",
-    )
-    axes[0, 0].set_title("Tickets by issue category (all tickets)")
-
-    sns.countplot(data=df, x="Priority", order=PRIORITY_ORDER, ax=axes[0, 1], color="#0f766e")
-    axes[0, 1].set_title("Tickets by priority (all tickets)")
-
-    # The key data-quality chart: why we can't just average Resolution_Time_Hrs
-    # across every row.
     status_order = ["Closed", "In Progress", "Pending"]
-    sns.boxplot(
-        data=df, x="Status", y=TARGET, order=status_order, ax=axes[0, 2], color="#f97316",
-    )
-    axes[0, 2].set_title("Resolution_Time_Hrs by status\n(Pending/In Progress = time elapsed so far, not resolved)")
-
     monthly_counts = df.groupby("month").size().reindex(range(1, 13)).dropna()
-    axes[0, 3].bar(monthly_counts.index, monthly_counts.values, color="#0891b2")
-    axes[0, 3].set_title("Ticket volume by month")
-    axes[0, 3].set_xlabel("Month")
-    axes[0, 3].set_ylabel("Tickets opened")
-    axes[0, 3].set_xticks(list(monthly_counts.index))
-
-    sns.histplot(data=resolved_df, x=TARGET, bins=25, kde=True, ax=axes[1, 0], color="#d97706")
-    axes[1, 0].set_title("Resolution-time distribution (resolved tickets only)")
-
-    sns.boxplot(
-        data=resolved_df, x="Priority", y=TARGET, order=PRIORITY_ORDER, ax=axes[1, 1], color="#93c5fd",
-    )
-    axes[1, 1].set_title("Resolution time by priority (resolved tickets only)")
-
     dept_order = resolved_df.groupby("Unit_Dept")[TARGET].mean().sort_values(ascending=False).index
-    sns.barplot(
-        data=resolved_df, y="Unit_Dept", x=TARGET, order=dept_order, ax=axes[1, 2], color="#7c3aed",
-        errorbar=None,
-    )
-    axes[1, 2].set_title("Mean resolution time by department (resolved tickets only)")
 
-    sns.regplot(
-        data=resolved_df, x="Response_Time_Hrs", y=TARGET, ax=axes[1, 3],
-        scatter_kws={"color": "#be185d", "alpha": 0.5, "s": 20}, line_kws={"color": "#1f2937"},
-    )
-    axes[1, 3].set_title(
-        f"Response vs. resolution time (resolved only)\ncorrelation = {response_resolution_corr:.2f} -- fast response doesn't imply fast resolution"
-    )
+    # Each entry is (filename, title, draw_fn). draw_fn(ax) renders one chart
+    # onto whichever Axes it's given -- reused for both the individual PNGs
+    # and the combined overview figure so the two can never drift apart.
+    charts: list[tuple[str, str, "callable"]] = [
+        (
+            "01_tickets_by_issue_category.png",
+            "Tickets by issue category (all tickets)",
+            lambda ax: sns.countplot(
+                data=df, y="Issue_Category", order=df["Issue_Category"].value_counts().index,
+                ax=ax, color="#2563eb",
+            ),
+        ),
+        (
+            "02_tickets_by_priority.png",
+            "Tickets by priority (all tickets)",
+            lambda ax: sns.countplot(data=df, x="Priority", order=PRIORITY_ORDER, ax=ax, color="#0f766e"),
+        ),
+        (
+            "03_resolution_time_by_status.png",
+            "Resolution_Time_Hrs by status\n(Pending/In Progress = time elapsed so far, not resolved)",
+            lambda ax: sns.boxplot(data=df, x="Status", y=TARGET, order=status_order, ax=ax, color="#f97316"),
+        ),
+        (
+            "04_ticket_volume_by_month.png",
+            "Ticket volume by month",
+            lambda ax: (
+                ax.bar(monthly_counts.index, monthly_counts.values, color="#0891b2"),
+                ax.set_xlabel("Month"),
+                ax.set_ylabel("Tickets opened"),
+                ax.set_xticks(list(monthly_counts.index)),
+            ),
+        ),
+        (
+            "05_resolution_time_distribution.png",
+            "Resolution-time distribution (resolved tickets only)",
+            lambda ax: sns.histplot(data=resolved_df, x=TARGET, bins=25, kde=True, ax=ax, color="#d97706"),
+        ),
+        (
+            "06_resolution_time_by_priority.png",
+            "Resolution time by priority (resolved tickets only)",
+            lambda ax: sns.boxplot(
+                data=resolved_df, x="Priority", y=TARGET, order=PRIORITY_ORDER, ax=ax, color="#93c5fd",
+            ),
+        ),
+        (
+            "07_resolution_time_by_department.png",
+            "Mean resolution time by department (resolved tickets only)",
+            lambda ax: sns.barplot(
+                data=resolved_df, y="Unit_Dept", x=TARGET, order=dept_order, ax=ax, color="#7c3aed",
+                errorbar=None,
+            ),
+        ),
+        (
+            "08_response_vs_resolution_time.png",
+            f"Response vs. resolution time (resolved only)\ncorrelation = {response_resolution_corr:.2f} "
+            "-- fast response doesn't imply fast resolution",
+            lambda ax: sns.regplot(
+                data=resolved_df, x="Response_Time_Hrs", y=TARGET, ax=ax,
+                scatter_kws={"color": "#be185d", "alpha": 0.5, "s": 20}, line_kws={"color": "#1f2937"},
+            ),
+        ),
+    ]
 
+    # Individual images -- one file per chart.
+    for filename, title, draw_fn in charts:
+        fig, ax = plt.subplots(figsize=(7, 5.5))
+        draw_fn(ax)
+        ax.set_title(title)
+        fig.tight_layout()
+        fig.savefig(output_dir / filename, dpi=180, bbox_inches="tight")
+        plt.close(fig)
+
+    # Combined overview -- all charts together in one image.
+    fig, axes = plt.subplots(2, 4, figsize=(24, 9))
+    for (filename, title, draw_fn), ax in zip(charts, axes.flat):
+        draw_fn(ax)
+        ax.set_title(title)
     fig.tight_layout()
     fig.savefig(output_dir / "helpdesk_overview.png", dpi=180, bbox_inches="tight")
     plt.close(fig)
