@@ -1,0 +1,17 @@
+{
+  "rows_total": 500,
+  "rows_resolved_used_for_modeling": 358,
+  "rows_excluded_unresolved": 142,
+  "columns": 14,
+  "missing_values": 0,
+  "date_start": "2026-01-08",
+  "date_end": "2026-09-02",
+  "mean_response_hours": 3.09,
+  "median_response_hours": 2.58,
+  "mean_resolution_hours_resolved_only": 7.44,
+  "median_resolution_hours_resolved_only": 5.68,
+  "mean_elapsed_hours_unresolved_tickets": 28.42,
+  "resolved_rate_percent": 71.6,
+  "response_sla_rate_percent": 95.6,
+  "note": "Resolution-time figures use Resolved=='Yes' tickets only. For the remaining tickets, Resolution_Time_Hrs reflects hours elapsed so far on a still-open ticket, not a finished duration, so it is reported separately rather than averaged in."
+}

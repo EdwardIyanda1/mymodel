@@ -1,0 +1,10 @@
+venv
+./__pycache__/
+instructions.jsonl
+./vscode
+mymodel.py
+download_data.py
+chat.py
+sft_data.py
+train_sft.py
+tinystories_local.txt

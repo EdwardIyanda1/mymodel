@@ -1,0 +1,501 @@
+Ticket_ID,Date,User_Type,Unit_Dept,Issue_Category,Issue_Description,Priority,Response_Time_Hrs,Resolution_Time_Hrs,Status,Resolved,Response_SLA
+HD0001,5/24/2026,Postgraduate Student,Library,ID Card,ID card details incorrect,Low,4.99,8.21,Closed,Yes,Within 8 Hours
+HD0002,7/7/2026,Student,Library,Registration,Registration page not responding,Medium,3.71,13.98,Closed,Yes,Within 8 Hours
+HD0003,4/23/2026,Staff,Student Affairs,Email,University email not working,High,1.32,5.01,Closed,Yes,Within 8 Hours
+HD0004,4/3/2026,Staff,Registry,Internet/Network,Wi-Fi connection unstable,Medium,6.2,10.06,Closed,Yes,Within 8 Hours
+HD0005,1/25/2026,Postgraduate Student,College of Animal Science,Software/MIS,Application access problem,Low,2.94,5.22,Closed,Yes,Within 8 Hours
+HD0006,1/16/2026,Postgraduate Student,Academic Planning,Software/MIS,Software installation request,Medium,2.02,4.97,Closed,Yes,Within 8 Hours
+HD0007,5/1/2026,Student,ICTREC,Hardware,Printer not responding,High,1.71,2.8,Closed,Yes,Within 8 Hours
+HD0008,1/23/2026,Student,College of Veterinary Medicine,Payment/Invoice,Payment confirmation delayed,Medium,1.01,3.82,Closed,Yes,Within 8 Hours
+HD0009,8/29/2026,Postgraduate Student,Library,Internet/Network,Cannot access campus Internet,Medium,1.49,7.5,Closed,Yes,Within 8 Hours
+HD0010,3/14/2026,Staff,Postgraduate School,Email,University email not working,Low,2.31,2.78,Closed,Yes,Within 8 Hours
+HD0011,8/27/2026,Postgraduate Student,College of Engineering,Clearance,Unable to complete online clearance,Medium,5.82,4.49,Closed,Yes,Within 8 Hours
+HD0012,4/24/2026,Student,Library,Portal,Programme information not updating,Medium,2.7,22.77,In Progress,No,Within 8 Hours
+HD0013,6/14/2026,Student,College of Plant Science,Internet/Network,Slow Internet connection,Low,2.82,8.15,Closed,Yes,Within 8 Hours
+HD0014,5/26/2026,Student,College of Agricultural Management,Admission,Admission portal error,Critical,0.42,10.21,Pending,No,Within 8 Hours
+HD0015,3/21/2026,Postgraduate Student,Postgraduate School,Admission,Change of course not reflecting,High,1.08,5.15,Closed,Yes,Within 8 Hours
+HD0016,2/1/2026,Postgraduate Student,Student Affairs,Registration,Registration page not responding,High,1.08,22.04,In Progress,No,Within 8 Hours
+HD0017,5/20/2026,Student,College of Engineering,ID Card,ID card details incorrect,Medium,2.58,31.16,In Progress,No,Within 8 Hours
+HD0018,5/30/2026,Staff,Academic Planning,Registration,Unable to submit course registration,Low,5.97,9.6,In Progress,No,Within 8 Hours
+HD0019,5/25/2026,Staff,College of Plant Science,Registration,Registered course not displaying,Low,4.26,0.79,Closed,Yes,Within 8 Hours
+HD0020,7/6/2026,Staff,Library,Email,Mailbox access problem,High,0.72,6.63,Closed,Yes,Within 8 Hours
+HD0021,3/9/2026,Postgraduate Student,College of Engineering,Others,System access request,High,2.25,5.65,Closed,Yes,Within 8 Hours
+HD0022,1/20/2026,Student,College of Environmental Resources,Payment/Invoice,Invoice not generated,Low,3.57,2.47,Closed,Yes,Within 8 Hours
+HD0023,2/7/2026,Student,Library,Clearance,Clearance record not displaying,Medium,1.15,43.06,Pending,No,Within 8 Hours
+HD0024,4/23/2026,Student,Postgraduate School,Email,Email messages not being received,Low,2.95,15.3,Closed,Yes,Within 8 Hours
+HD0025,7/28/2026,Student,College of Veterinary Medicine,Website/Multimedia,University webpage not updating,Low,4.59,16.44,Pending,No,Within 8 Hours
+HD0026,8/16/2026,Staff,Bursary,Internet/Network,Slow Internet connection,Low,4.54,24.61,In Progress,No,Within 8 Hours
+HD0027,1/8/2026,Postgraduate Student,Registry,Website/Multimedia,University webpage not updating,Medium,1.79,44.91,In Progress,No,Within 8 Hours
+HD0028,8/24/2026,Student,College of Agricultural Management,Software/MIS,System error during data entry,Medium,4.58,12.31,Closed,Yes,Within 8 Hours
+HD0029,7/11/2026,Student,Postgraduate School,Payment/Invoice,Receipt cannot be generated,Low,2.4,29.34,In Progress,No,Within 8 Hours
+HD0030,7/15/2026,Student,Library,Admission,Admission status not displaying,Medium,3.12,9.22,Closed,Yes,Within 8 Hours
+HD0031,1/25/2026,Staff,College of Plant Science,Portal,Programme information not updating,Low,2.92,8.88,Pending,No,Within 8 Hours
+HD0032,6/2/2026,Student,College of Agricultural Management,Portal,Unable to login to student portal,High,0.82,2.32,Closed,Yes,Within 8 Hours
+HD0033,6/25/2026,Student,College of Environmental Resources,ID Card,ID card printing problem,Medium,4.06,10.33,Closed,Yes,Within 8 Hours
+HD0034,9/1/2026,Staff,Bursary,Internet/Network,Network connection unavailable,Medium,2.5,11.73,Closed,Yes,Within 8 Hours
+HD0035,8/31/2026,Staff,Registry,Registration,Registration page not responding,Low,4.64,1.86,Closed,Yes,Within 8 Hours
+HD0036,7/4/2026,Student,College of Engineering,Portal,Student profile not displaying correctly,Low,4.64,5.89,Closed,Yes,Within 8 Hours
+HD0037,8/31/2026,Postgraduate Student,College of Plant Science,Others,General ICT support request,Medium,2.55,10.98,Closed,Yes,Within 8 Hours
+HD0038,3/18/2026,Student,Academic Planning,Student Information,Biodata information needs correction,High,0.36,8.63,Closed,Yes,Within 8 Hours
+HD0039,8/25/2026,Student,ICTREC,Admission,Change of course not reflecting,Medium,2.73,9.88,Pending,No,Within 8 Hours
+HD0040,7/13/2026,Student,College of Engineering,Registration,Registered course not displaying,Medium,2.73,1.43,Closed,Yes,Within 8 Hours
+HD0041,6/3/2026,Student,Registry,Admission,Admission application issue,Medium,2.3,6.17,Closed,Yes,Within 8 Hours
+HD0042,3/9/2026,Student,Academic Planning,Registration,Course registration error,High,3.38,4.72,Closed,Yes,Within 8 Hours
+HD0043,3/6/2026,Postgraduate Student,College of Agricultural Management,Payment/Invoice,Outstanding invoice still showing after payment,High,0.96,47,Pending,No,Within 8 Hours
+HD0044,8/31/2026,Staff,College of Computing Sciences,Software/MIS,MIS application not responding,High,2.48,10.59,Closed,Yes,Within 8 Hours
+HD0045,8/12/2026,Postgraduate Student,Student Affairs,Admission,Admission application issue,High,1.12,36.31,Closed,Yes,Within 8 Hours
+HD0046,3/3/2026,Staff,College of Engineering,Internet/Network,Network connection unavailable,High,1.58,14.6,Closed,Yes,Within 8 Hours
+HD0047,6/18/2026,Staff,Student Affairs,Internet/Network,Wi-Fi connection unstable,Critical,0.54,8.08,Closed,Yes,Within 8 Hours
+HD0048,6/2/2026,Student,College of Computing Sciences,Admission,Admission status not displaying,High,1.21,17.15,In Progress,No,Within 8 Hours
+HD0049,2/3/2026,Staff,College of Engineering,Portal,Student profile not displaying correctly,Medium,3.06,4.71,Closed,Yes,Within 8 Hours
+HD0050,6/29/2026,Staff,College of Agricultural Management,Email,University email not working,Medium,2.61,3.94,Closed,Yes,Within 8 Hours
+HD0051,6/13/2026,Student,College of Agricultural Management,Admission,Admission status not displaying,High,0.69,4.73,Closed,Yes,Within 8 Hours
+HD0052,3/29/2026,Postgraduate Student,Academic Planning,Software/MIS,Software installation request,Medium,2.15,3.99,Closed,Yes,Within 8 Hours
+HD0053,6/11/2026,Student,College of Veterinary Medicine,Payment/Invoice,Receipt cannot be generated,Medium,2.38,7.15,Closed,Yes,Within 8 Hours
+HD0054,3/28/2026,Student,Library,Registration,Course allocation not updating,High,4.23,7.41,Closed,Yes,Within 8 Hours
+HD0055,6/23/2026,Student,Postgraduate School,Registration,Registered course not displaying,Medium,3,4.95,Closed,Yes,Within 8 Hours
+HD0056,6/10/2026,Student,Library,Payment/Invoice,Invoice not generated,Low,1.32,13.15,Pending,No,Within 8 Hours
+HD0057,6/21/2026,Student,College of Food Science,Registration,Course allocation not updating,Medium,2.69,25.76,Closed,Yes,Within 8 Hours
+HD0058,5/3/2026,Postgraduate Student,Library,Clearance,Unable to complete online clearance,High,1.35,8.04,Closed,Yes,Within 8 Hours
+HD0059,5/28/2026,Student,College of Animal Science,Internet/Network,Cannot access campus Internet,High,1.47,3.64,Closed,Yes,Within 8 Hours
+HD0060,4/29/2026,Student,College of Food Science,Student Information,Student information request,Medium,4.87,37.23,In Progress,No,Within 8 Hours
+HD0061,6/14/2026,Postgraduate Student,ICTREC,Registration,Unable to submit course registration,High,2.32,3.66,Closed,Yes,Within 8 Hours
+HD0062,2/9/2026,Student,Student Affairs,Registration,Unable to submit course registration,Medium,5.62,2.09,Closed,Yes,Within 8 Hours
+HD0063,4/21/2026,Student,Registry,Payment/Invoice,Receipt cannot be generated,Medium,3.59,22.84,Closed,Yes,Within 8 Hours
+HD0064,6/1/2026,Staff,Academic Planning,Software/MIS,Application access problem,High,0.87,24.88,Closed,Yes,Within 8 Hours
+HD0065,4/22/2026,Staff,Student Affairs,Portal,Portal session keeps expiring,High,1.58,3.64,Closed,Yes,Within 8 Hours
+HD0066,4/14/2026,Postgraduate Student,College of Animal Science,Admission,Admission application issue,Low,1.62,2.79,Closed,Yes,Within 8 Hours
+HD0067,5/21/2026,Postgraduate Student,ICTREC,Admission,O'Level verification problem,High,0.84,8.47,Closed,Yes,Within 8 Hours
+HD0068,1/17/2026,Student,Registry,Payment/Invoice,Receipt cannot be generated,Low,2.29,8.22,Closed,Yes,Within 8 Hours
+HD0069,4/22/2026,Student,Postgraduate School,Payment/Invoice,Receipt cannot be generated,Low,2.47,2.43,Closed,Yes,Within 8 Hours
+HD0070,3/3/2026,Student,College of Food Science,Portal,Programme information not updating,Low,5.94,0.97,Closed,Yes,Within 8 Hours
+HD0071,1/10/2026,Postgraduate Student,College of Computing Sciences,Hardware,Desktop computer not starting,High,1.7,22.74,Closed,Yes,Within 8 Hours
+HD0072,7/3/2026,Staff,College of Veterinary Medicine,Internet/Network,Wi-Fi connection unstable,Medium,1.07,6.89,Closed,Yes,Within 8 Hours
+HD0073,3/25/2026,Student,College of Food Science,Payment/Invoice,Payment not reflecting on portal,High,1.73,11.64,Closed,Yes,Within 8 Hours
+HD0074,1/24/2026,Staff,College of Environmental Resources,Portal,Portal session keeps expiring,Medium,1.32,1.68,Closed,Yes,Within 8 Hours
+HD0075,2/4/2026,Student,Registry,Software/MIS,Software installation request,High,2,29.77,Pending,No,Within 8 Hours
+HD0076,1/8/2026,Postgraduate Student,College of Agricultural Management,Portal,Student profile not displaying correctly,Low,4.36,40.54,Pending,No,Within 8 Hours
+HD0077,7/11/2026,Staff,College of Veterinary Medicine,Portal,Portal session keeps expiring,Medium,1.79,4.62,Closed,Yes,Within 8 Hours
+HD0078,6/5/2026,Postgraduate Student,College of Plant Science,ID Card,Unable to process ID card,Medium,3.05,2.69,Closed,Yes,Within 8 Hours
+HD0079,6/10/2026,Student,Student Affairs,Website/Multimedia,Multimedia support request,Low,10.6,2.95,Closed,Yes,Beyond 8 Hours
+HD0080,4/2/2026,Postgraduate Student,Bursary,Payment/Invoice,Receipt cannot be generated,Low,1.97,4.6,Closed,Yes,Within 8 Hours
+HD0081,5/10/2026,Student,College of Plant Science,Email,Unable to access staff email,Low,2.22,4.17,Closed,Yes,Within 8 Hours
+HD0082,4/18/2026,Staff,College of Veterinary Medicine,Internet/Network,Slow Internet connection,Medium,4.92,9.81,Closed,Yes,Within 8 Hours
+HD0083,5/25/2026,Student,College of Plant Science,Payment/Invoice,Outstanding invoice still showing after payment,Medium,4.42,7.19,Closed,Yes,Within 8 Hours
+HD0084,7/14/2026,Student,Library,Admission,Admission status not displaying,Medium,4.09,16.77,Closed,Yes,Within 8 Hours
+HD0085,6/4/2026,Student,Library,Hardware,Printer not responding,High,1.31,28.03,In Progress,No,Within 8 Hours
+HD0086,7/5/2026,Postgraduate Student,Student Affairs,Payment/Invoice,Invoice not generated,Medium,1.59,3.24,Closed,Yes,Within 8 Hours
+HD0087,8/15/2026,Student,College of Plant Science,Internet/Network,Network connection unavailable,Medium,2.49,10.31,Pending,No,Within 8 Hours
+HD0088,1/18/2026,Staff,College of Animal Science,Portal,Portal session keeps expiring,Medium,3.03,6.8,Closed,Yes,Within 8 Hours
+HD0089,1/18/2026,Student,ICTREC,Website/Multimedia,University webpage not updating,Medium,2.62,36.51,Closed,Yes,Within 8 Hours
+HD0090,6/9/2026,Staff,Registry,Software/MIS,MIS application not responding,Low,3.29,21.49,Closed,Yes,Within 8 Hours
+HD0091,4/24/2026,Student,Academic Planning,ID Card,Unable to process ID card,Low,5.36,1.34,Closed,Yes,Within 8 Hours
+HD0092,1/25/2026,Staff,Registry,ID Card,ID card details incorrect,Medium,1.44,5.85,Closed,Yes,Within 8 Hours
+HD0093,5/5/2026,Student,Bursary,Internet/Network,Wi-Fi connection unstable,Medium,2.3,9.72,Closed,Yes,Within 8 Hours
+HD0094,3/13/2026,Postgraduate Student,Student Affairs,Internet/Network,Slow Internet connection,Low,4.93,32.25,Pending,No,Within 8 Hours
+HD0095,8/4/2026,Student,College of Plant Science,Admission,Admission application issue,Medium,1.63,1.83,Closed,Yes,Within 8 Hours
+HD0096,5/4/2026,Staff,College of Environmental Resources,Portal,Programme information not updating,High,1.17,8.82,Closed,Yes,Within 8 Hours
+HD0097,3/28/2026,Student,College of Animal Science,Admission,O'Level verification problem,Low,4.27,3.65,Closed,Yes,Within 8 Hours
+HD0098,8/3/2026,Student,College of Veterinary Medicine,Portal,Programme information not updating,Medium,2.86,19.96,Closed,Yes,Within 8 Hours
+HD0099,2/20/2026,Student,College of Animal Science,Portal,Programme information not updating,Medium,1.6,24.31,In Progress,No,Within 8 Hours
+HD0100,1/31/2026,Student,College of Animal Science,Software/MIS,Software installation request,Medium,2.68,19.85,Pending,No,Within 8 Hours
+HD0101,2/3/2026,Student,College of Agricultural Management,Admission,Admission portal error,Low,4.63,22.98,In Progress,No,Within 8 Hours
+HD0102,4/7/2026,Student,College of Plant Science,Email,Email messages not being received,Medium,4.72,9.09,Closed,Yes,Within 8 Hours
+HD0103,4/27/2026,Postgraduate Student,Library,Registration,Unable to submit course registration,Medium,1.22,26.36,In Progress,No,Within 8 Hours
+HD0104,1/8/2026,Postgraduate Student,College of Environmental Resources,Portal,Portal page not loading,Medium,3.45,5.55,Closed,Yes,Within 8 Hours
+HD0105,8/31/2026,Student,College of Animal Science,Portal,Unable to login to student portal,Medium,3.45,48.6,Closed,Yes,Within 8 Hours
+HD0106,4/13/2026,Student,College of Animal Science,Registration,Course allocation not updating,Low,5.2,5.93,Closed,Yes,Within 8 Hours
+HD0107,4/21/2026,Postgraduate Student,ICTREC,Email,University email not working,Low,6.42,3.82,Closed,Yes,Within 8 Hours
+HD0108,6/4/2026,Staff,ICTREC,Hardware,Desktop computer not starting,Low,3.2,6.82,Closed,Yes,Within 8 Hours
+HD0109,4/11/2026,Student,College of Animal Science,ID Card,ID card not yet available,Medium,1.7,3.67,Closed,Yes,Within 8 Hours
+HD0110,4/20/2026,Staff,Library,Payment/Invoice,Outstanding invoice still showing after payment,Medium,1.99,5.8,Closed,Yes,Within 8 Hours
+HD0111,6/20/2026,Postgraduate Student,College of Agricultural Management,Admission,O'Level verification problem,Critical,2.86,26.8,In Progress,No,Within 8 Hours
+HD0112,4/27/2026,Postgraduate Student,College of Environmental Resources,Portal,Student profile not displaying correctly,High,2.19,1.77,Closed,Yes,Within 8 Hours
+HD0113,3/13/2026,Postgraduate Student,College of Agricultural Management,Clearance,Unable to complete online clearance,Low,2.93,5.75,Closed,Yes,Within 8 Hours
+HD0114,7/7/2026,Student,College of Engineering,Admission,Admission portal error,Medium,2.69,26.49,In Progress,No,Within 8 Hours
+HD0115,4/26/2026,Staff,College of Veterinary Medicine,Email,Password reset required for email,Critical,0.54,37.94,In Progress,No,Within 8 Hours
+HD0116,3/21/2026,Student,College of Food Science,Admission,Change of course not reflecting,High,1,28.58,Closed,Yes,Within 8 Hours
+HD0117,6/12/2026,Student,College of Environmental Resources,Registration,Registered course not displaying,Low,3.9,7.75,Closed,Yes,Within 8 Hours
+HD0118,8/23/2026,Student,College of Animal Science,Registration,Unable to submit course registration,Medium,8.45,43.85,Pending,No,Beyond 8 Hours
+HD0119,6/30/2026,Student,College of Engineering,Admission,Admission portal error,Low,1.25,3.01,Closed,Yes,Within 8 Hours
+HD0120,4/6/2026,Student,College of Agricultural Management,Software/MIS,System error during data entry,Low,2.64,6.38,Closed,Yes,Within 8 Hours
+HD0121,6/29/2026,Staff,College of Computing Sciences,Others,System access request,Low,2.46,46.89,Pending,No,Within 8 Hours
+HD0122,7/29/2026,Student,Academic Planning,Clearance,Clearance record not displaying,High,1.98,11.61,Closed,Yes,Within 8 Hours
+HD0123,6/19/2026,Student,Postgraduate School,ID Card,ID card details incorrect,Medium,1.34,3.44,Closed,Yes,Within 8 Hours
+HD0124,7/15/2026,Student,College of Environmental Resources,Hardware,Keyboard or mouse not working,High,1.16,17.41,Closed,Yes,Within 8 Hours
+HD0125,8/5/2026,Postgraduate Student,Academic Planning,Internet/Network,Network connection unavailable,Medium,6.87,7.95,Closed,Yes,Within 8 Hours
+HD0126,1/24/2026,Staff,Student Affairs,Clearance,Clearance record not displaying,High,0.75,12.01,Closed,Yes,Within 8 Hours
+HD0127,1/8/2026,Postgraduate Student,College of Agricultural Management,Student Information,Student information request,Medium,8.35,7.77,Closed,Yes,Beyond 8 Hours
+HD0128,9/2/2026,Staff,College of Veterinary Medicine,Portal,Student profile not displaying correctly,Medium,1.13,2.9,Closed,Yes,Within 8 Hours
+HD0129,6/19/2026,Student,Academic Planning,Admission,Admission portal error,Medium,5.22,3.09,Closed,Yes,Within 8 Hours
+HD0130,5/11/2026,Postgraduate Student,Student Affairs,Software/MIS,System error during data entry,Low,4.85,12.7,Closed,Yes,Within 8 Hours
+HD0131,7/14/2026,Postgraduate Student,Bursary,Internet/Network,Slow Internet connection,Medium,1.56,5.88,Closed,Yes,Within 8 Hours
+HD0132,6/11/2026,Student,Bursary,Email,Email messages not being received,Medium,0.44,2.36,Closed,Yes,Within 8 Hours
+HD0133,4/7/2026,Student,Library,Student Information,Academic information not updated,Medium,2.26,1.77,Closed,Yes,Within 8 Hours
+HD0134,2/5/2026,Postgraduate Student,College of Veterinary Medicine,Admission,Change of course not reflecting,Low,9.33,40.62,In Progress,No,Beyond 8 Hours
+HD0135,2/6/2026,Student,College of Veterinary Medicine,Portal,Programme information not updating,Critical,0.63,20.05,Pending,No,Within 8 Hours
+HD0136,3/30/2026,Postgraduate Student,Library,Software/MIS,Application access problem,Low,8.4,39.12,Pending,No,Beyond 8 Hours
+HD0137,2/2/2026,Postgraduate Student,Bursary,Email,Unable to access staff email,Medium,4.93,4.61,Closed,Yes,Within 8 Hours
+HD0138,2/6/2026,Student,College of Engineering,Portal,Portal page not loading,Medium,1.52,28.1,Pending,No,Within 8 Hours
+HD0139,3/2/2026,Student,College of Engineering,Admission,Admission portal error,Medium,2.9,7.82,In Progress,No,Within 8 Hours
+HD0140,1/20/2026,Postgraduate Student,College of Plant Science,Hardware,Keyboard or mouse not working,Medium,2.7,41.59,In Progress,No,Within 8 Hours
+HD0141,1/21/2026,Student,Academic Planning,Registration,Course allocation not updating,Low,4.04,15.34,Closed,Yes,Within 8 Hours
+HD0142,5/1/2026,Student,College of Engineering,ID Card,Unable to process ID card,Critical,1.91,3.13,Closed,Yes,Within 8 Hours
+HD0143,4/30/2026,Student,College of Veterinary Medicine,Registration,Registration page not responding,Medium,8.4,23.38,In Progress,No,Beyond 8 Hours
+HD0144,3/11/2026,Staff,College of Agricultural Management,Software/MIS,Application error during transaction,Medium,2.39,9.85,Closed,Yes,Within 8 Hours
+HD0145,7/13/2026,Staff,Registry,Internet/Network,Wi-Fi connection unstable,High,1.75,11.63,Closed,Yes,Within 8 Hours
+HD0146,4/20/2026,Student,College of Environmental Resources,Portal,Programme information not updating,Medium,2.32,2.88,Closed,Yes,Within 8 Hours
+HD0147,4/5/2026,Postgraduate Student,College of Food Science,Admission,Admission status not displaying,Critical,0.58,13.9,Closed,Yes,Within 8 Hours
+HD0148,2/3/2026,Student,Library,Registration,Course registration error,Medium,3.16,30.11,Pending,No,Within 8 Hours
+HD0149,1/11/2026,Postgraduate Student,Postgraduate School,Software/MIS,Application access problem,Medium,4.26,8.21,Closed,Yes,Within 8 Hours
+HD0150,4/1/2026,Student,Bursary,ID Card,ID card not yet available,Medium,4.07,6.44,Closed,Yes,Within 8 Hours
+HD0151,1/12/2026,Student,College of Environmental Resources,Internet/Network,Slow Internet connection,Low,2.41,2.32,Closed,Yes,Within 8 Hours
+HD0152,7/22/2026,Staff,College of Engineering,Email,Unable to access staff email,Medium,3.92,31.04,In Progress,No,Within 8 Hours
+HD0153,4/23/2026,Student,Bursary,Website/Multimedia,Website page not displaying correctly,Low,3.76,7.27,Closed,Yes,Within 8 Hours
+HD0154,6/5/2026,Student,College of Plant Science,Registration,Course registration error,Medium,5.25,13.07,Closed,Yes,Within 8 Hours
+HD0155,2/28/2026,Student,College of Environmental Resources,Admission,Admission status not displaying,Low,5.13,38.09,Pending,No,Within 8 Hours
+HD0156,7/4/2026,Student,College of Food Science,Payment/Invoice,Receipt cannot be generated,Low,3.37,6.13,Closed,Yes,Within 8 Hours
+HD0157,8/28/2026,Student,Registry,Email,Email messages not being received,High,2.36,20.26,Closed,Yes,Within 8 Hours
+HD0158,3/29/2026,Student,College of Food Science,Payment/Invoice,Receipt cannot be generated,Low,7.79,3.04,Closed,Yes,Within 8 Hours
+HD0159,3/8/2026,Postgraduate Student,Academic Planning,Student Information,Matriculation information issue,Low,5.53,1.77,Closed,Yes,Within 8 Hours
+HD0160,1/24/2026,Student,Student Affairs,Registration,Unable to submit course registration,Low,4.54,2.6,Closed,Yes,Within 8 Hours
+HD0161,6/19/2026,Postgraduate Student,Library,Portal,Student profile not displaying correctly,Medium,2.74,15.92,Pending,No,Within 8 Hours
+HD0162,1/24/2026,Student,Bursary,Portal,Programme information not updating,Low,2.42,8.44,Closed,Yes,Within 8 Hours
+HD0163,8/29/2026,Staff,College of Animal Science,Hardware,Computer system performance is slow,High,0.86,33.01,In Progress,No,Within 8 Hours
+HD0164,3/23/2026,Staff,ICTREC,Others,Request for technical assistance,Low,7.18,30.84,Pending,No,Within 8 Hours
+HD0165,1/24/2026,Student,College of Animal Science,Payment/Invoice,Payment not reflecting on portal,Low,5.36,4.51,Closed,Yes,Within 8 Hours
+HD0166,5/26/2026,Student,College of Environmental Resources,Others,Other ICT service issue,Medium,2.58,37.03,In Progress,No,Within 8 Hours
+HD0167,2/12/2026,Postgraduate Student,College of Veterinary Medicine,Portal,Portal page not loading,Medium,2.71,24.92,In Progress,No,Within 8 Hours
+HD0168,3/9/2026,Staff,College of Food Science,Software/MIS,Application error during transaction,Medium,4.45,6.11,Closed,Yes,Within 8 Hours
+HD0169,3/18/2026,Postgraduate Student,College of Plant Science,Others,Other ICT service issue,Low,2.41,1.76,Closed,Yes,Within 8 Hours
+HD0170,1/21/2026,Postgraduate Student,College of Environmental Resources,Hardware,Desktop computer not starting,High,1.88,6.74,Closed,Yes,Within 8 Hours
+HD0171,6/3/2026,Staff,College of Food Science,Email,Mailbox access problem,High,0.95,6.83,Closed,Yes,Within 8 Hours
+HD0172,1/26/2026,Staff,College of Food Science,Clearance,Clearance submission error,Low,4.35,2.04,Closed,Yes,Within 8 Hours
+HD0173,5/15/2026,Postgraduate Student,College of Veterinary Medicine,Payment/Invoice,Outstanding invoice still showing after payment,Low,2.93,3.49,Closed,Yes,Within 8 Hours
+HD0174,2/13/2026,Staff,College of Engineering,Payment/Invoice,Receipt cannot be generated,Low,1.71,1.2,Closed,Yes,Within 8 Hours
+HD0175,1/14/2026,Student,College of Plant Science,Software/MIS,Application access problem,High,1.01,7.45,Closed,Yes,Within 8 Hours
+HD0176,8/5/2026,Postgraduate Student,Bursary,Website/Multimedia,Website page not displaying correctly,Medium,3.08,10.36,Closed,Yes,Within 8 Hours
+HD0177,4/28/2026,Postgraduate Student,College of Computing Sciences,ID Card,Unable to process ID card,Medium,4.17,3.86,Closed,Yes,Within 8 Hours
+HD0178,7/24/2026,Staff,Library,Hardware,Computer system performance is slow,Low,3.76,2.17,Closed,Yes,Within 8 Hours
+HD0179,3/18/2026,Staff,College of Veterinary Medicine,Software/MIS,Application access problem,Critical,0.79,27.12,Pending,No,Within 8 Hours
+HD0180,6/18/2026,Postgraduate Student,Postgraduate School,Registration,Registration page not responding,Low,4.54,1.65,Closed,Yes,Within 8 Hours
+HD0181,3/15/2026,Student,College of Plant Science,Payment/Invoice,Payment not reflecting on portal,Low,5.06,8.12,Closed,Yes,Within 8 Hours
+HD0182,8/31/2026,Staff,Academic Planning,Email,Unable to access staff email,High,1.41,7.57,Closed,Yes,Within 8 Hours
+HD0183,3/27/2026,Postgraduate Student,College of Engineering,Portal,Portal page not loading,Medium,3.8,41.25,In Progress,No,Within 8 Hours
+HD0184,7/4/2026,Student,Student Affairs,ID Card,Unable to process ID card,Medium,2.94,4.31,Closed,Yes,Within 8 Hours
+HD0185,5/20/2026,Student,Library,ID Card,ID card details incorrect,Medium,2.74,2.59,Closed,Yes,Within 8 Hours
+HD0186,7/27/2026,Student,Student Affairs,Hardware,Desktop computer not starting,Low,3.85,5.76,Closed,Yes,Within 8 Hours
+HD0187,3/7/2026,Staff,College of Environmental Resources,Portal,Programme information not updating,Low,8.44,4.04,Closed,Yes,Beyond 8 Hours
+HD0188,1/26/2026,Student,Library,Payment/Invoice,Outstanding invoice still showing after payment,Medium,8.5,3.34,Closed,Yes,Beyond 8 Hours
+HD0189,5/5/2026,Student,Postgraduate School,Payment/Invoice,Outstanding invoice still showing after payment,Medium,4.2,6.2,Closed,Yes,Within 8 Hours
+HD0190,7/11/2026,Student,College of Computing Sciences,Payment/Invoice,Payment confirmation delayed,High,5,4.14,Closed,Yes,Within 8 Hours
+HD0191,4/1/2026,Postgraduate Student,College of Food Science,Portal,Student profile not displaying correctly,Low,2.39,13.35,Pending,No,Within 8 Hours
+HD0192,1/21/2026,Staff,College of Food Science,Hardware,Scanner malfunction,Medium,0.81,5.43,Closed,Yes,Within 8 Hours
+HD0193,3/25/2026,Student,College of Computing Sciences,Student Information,Student record not displaying,High,0.99,5.57,Closed,Yes,Within 8 Hours
+HD0194,3/19/2026,Postgraduate Student,College of Animal Science,Others,Request for technical assistance,Low,4.59,7.34,Closed,Yes,Within 8 Hours
+HD0195,8/20/2026,Postgraduate Student,College of Engineering,Hardware,Keyboard or mouse not working,Low,6.41,2.86,Closed,Yes,Within 8 Hours
+HD0196,7/28/2026,Student,Bursary,Registration,Course allocation not updating,Medium,1.59,7.15,Closed,Yes,Within 8 Hours
+HD0197,2/20/2026,Postgraduate Student,College of Agricultural Management,Software/MIS,Application error during transaction,Medium,1.26,22.11,Closed,Yes,Within 8 Hours
+HD0198,2/16/2026,Student,Student Affairs,Payment/Invoice,Payment confirmation delayed,Medium,4.97,4.05,Closed,Yes,Within 8 Hours
+HD0199,6/17/2026,Postgraduate Student,Academic Planning,Payment/Invoice,Payment confirmation delayed,Medium,1.01,45.81,In Progress,No,Within 8 Hours
+HD0200,2/14/2026,Postgraduate Student,College of Agricultural Management,Portal,Student profile not displaying correctly,Medium,2.44,12,In Progress,No,Within 8 Hours
+HD0201,4/13/2026,Student,Registry,ID Card,ID card details incorrect,High,0.62,7.36,In Progress,No,Within 8 Hours
+HD0202,4/8/2026,Staff,College of Engineering,Internet/Network,Network connection unavailable,Medium,2.61,14.77,Closed,Yes,Within 8 Hours
+HD0203,5/28/2026,Staff,College of Computing Sciences,ID Card,ID card details incorrect,Medium,2.03,6.41,Closed,Yes,Within 8 Hours
+HD0204,8/27/2026,Postgraduate Student,College of Animal Science,Hardware,Printer not responding,Critical,0.44,14.41,In Progress,No,Within 8 Hours
+HD0205,1/27/2026,Student,College of Animal Science,Portal,Portal page not loading,High,1.6,46.64,Pending,No,Within 8 Hours
+HD0206,3/22/2026,Postgraduate Student,College of Engineering,Others,General ICT support request,Medium,3.85,35.9,Pending,No,Within 8 Hours
+HD0207,7/26/2026,Student,College of Engineering,Clearance,Clearance process showing incomplete,Low,1.63,6.5,Closed,Yes,Within 8 Hours
+HD0208,5/26/2026,Student,College of Engineering,Hardware,Computer system performance is slow,Medium,3.12,4.7,Closed,Yes,Within 8 Hours
+HD0209,5/19/2026,Student,Student Affairs,Website/Multimedia,Multimedia support request,Critical,1.88,7.01,Closed,Yes,Within 8 Hours
+HD0210,4/3/2026,Student,College of Engineering,Registration,Course registration error,Medium,4.97,5.43,Closed,Yes,Within 8 Hours
+HD0211,4/25/2026,Postgraduate Student,College of Veterinary Medicine,Software/MIS,Application access problem,Low,11.8,11.48,Closed,Yes,Beyond 8 Hours
+HD0212,9/1/2026,Student,College of Plant Science,Website/Multimedia,Website content correction request,Medium,2.27,7.47,Closed,Yes,Within 8 Hours
+HD0213,5/26/2026,Postgraduate Student,ICTREC,Payment/Invoice,Payment not reflecting on portal,Low,5.42,7.3,Closed,Yes,Within 8 Hours
+HD0214,2/17/2026,Student,College of Plant Science,ID Card,ID card details incorrect,Medium,1.53,6.68,Closed,Yes,Within 8 Hours
+HD0215,1/25/2026,Student,Academic Planning,Admission,Admission portal error,Low,6.8,0.85,Closed,Yes,Within 8 Hours
+HD0216,5/12/2026,Student,Library,ID Card,ID card printing problem,Medium,1.36,28.91,In Progress,No,Within 8 Hours
+HD0217,4/27/2026,Student,Postgraduate School,ID Card,Unable to process ID card,Low,3.28,8,Closed,Yes,Within 8 Hours
+HD0218,4/17/2026,Student,College of Engineering,Registration,Unable to submit course registration,High,3.43,6.94,Closed,Yes,Within 8 Hours
+HD0219,2/10/2026,Student,Library,Payment/Invoice,Receipt cannot be generated,Low,9.31,1.22,Closed,Yes,Beyond 8 Hours
+HD0220,8/1/2026,Postgraduate Student,College of Agricultural Management,Payment/Invoice,Invoice not generated,Critical,0.31,8.68,Closed,Yes,Within 8 Hours
+HD0221,8/18/2026,Staff,Bursary,Email,Email messages not being received,Critical,0.99,7.34,Closed,Yes,Within 8 Hours
+HD0222,4/5/2026,Staff,College of Plant Science,Portal,Portal session keeps expiring,Critical,0.26,6.13,Closed,Yes,Within 8 Hours
+HD0223,2/8/2026,Postgraduate Student,College of Veterinary Medicine,Payment/Invoice,Receipt cannot be generated,Low,1.85,36.56,In Progress,No,Within 8 Hours
+HD0224,4/7/2026,Staff,College of Computing Sciences,Hardware,Scanner malfunction,Low,4.65,2.26,Closed,Yes,Within 8 Hours
+HD0225,6/28/2026,Postgraduate Student,College of Animal Science,Portal,Programme information not updating,Low,2.86,1.09,Closed,Yes,Within 8 Hours
+HD0226,9/2/2026,Student,College of Agricultural Management,Portal,Student profile not displaying correctly,High,1.45,9.41,Closed,Yes,Within 8 Hours
+HD0227,3/31/2026,Postgraduate Student,College of Plant Science,Portal,Portal session keeps expiring,Medium,1.51,27.81,Pending,No,Within 8 Hours
+HD0228,4/15/2026,Postgraduate Student,Bursary,Portal,Student profile not displaying correctly,High,1.12,37.05,In Progress,No,Within 8 Hours
+HD0229,5/6/2026,Student,College of Plant Science,Payment/Invoice,Outstanding invoice still showing after payment,Medium,2.45,21.47,Pending,No,Within 8 Hours
+HD0230,6/21/2026,Student,Postgraduate School,Admission,Admission status not displaying,Medium,1.92,38.6,Pending,No,Within 8 Hours
+HD0231,7/22/2026,Staff,College of Animal Science,Email,Unable to access staff email,Medium,7.66,12.21,Pending,No,Within 8 Hours
+HD0232,4/22/2026,Student,College of Food Science,Admission,Admission status not displaying,Low,2.59,3.06,Closed,Yes,Within 8 Hours
+HD0233,1/20/2026,Student,College of Environmental Resources,Admission,O'Level verification problem,High,1.41,5.39,Closed,Yes,Within 8 Hours
+HD0234,2/18/2026,Staff,College of Veterinary Medicine,Email,Email messages not being received,Medium,3.64,7.5,Closed,Yes,Within 8 Hours
+HD0235,3/9/2026,Staff,Postgraduate School,Email,Password reset required for email,Medium,1.94,3.15,Closed,Yes,Within 8 Hours
+HD0236,5/7/2026,Postgraduate Student,College of Food Science,Payment/Invoice,Invoice not generated,Medium,2.23,1.23,Closed,Yes,Within 8 Hours
+HD0237,4/16/2026,Student,Registry,Student Information,Student information request,Medium,1.13,46.09,Pending,No,Within 8 Hours
+HD0238,6/21/2026,Staff,College of Computing Sciences,Software/MIS,Software installation request,High,3.71,31.36,Closed,Yes,Within 8 Hours
+HD0239,6/11/2026,Postgraduate Student,Student Affairs,Registration,Registration page not responding,Medium,3.57,16.05,Pending,No,Within 8 Hours
+HD0240,7/7/2026,Postgraduate Student,Library,Portal,Portal page not loading,Low,20.66,4.49,Closed,Yes,Beyond 8 Hours
+HD0241,8/17/2026,Student,College of Plant Science,Admission,Admission application issue,Medium,2.42,2.63,Closed,Yes,Within 8 Hours
+HD0242,5/21/2026,Student,College of Veterinary Medicine,ID Card,Lost ID card replacement request,High,0.62,41.71,Pending,No,Within 8 Hours
+HD0243,7/25/2026,Student,College of Agricultural Management,Portal,Portal page not loading,High,0.99,8.2,Closed,Yes,Within 8 Hours
+HD0244,3/18/2026,Postgraduate Student,College of Computing Sciences,Student Information,Matriculation information issue,Medium,1.82,8.77,Closed,Yes,Within 8 Hours
+HD0245,2/2/2026,Student,Bursary,ID Card,ID card printing problem,Medium,6.58,7.59,Closed,Yes,Within 8 Hours
+HD0246,5/30/2026,Student,Bursary,Admission,Admission status not displaying,High,1.49,16.28,Closed,Yes,Within 8 Hours
+HD0247,1/27/2026,Postgraduate Student,ICTREC,Internet/Network,Slow Internet connection,High,1.57,4.44,Closed,Yes,Within 8 Hours
+HD0248,4/29/2026,Student,College of Animal Science,Portal,Student profile not displaying correctly,High,3.47,46.07,Pending,No,Within 8 Hours
+HD0249,3/24/2026,Student,Student Affairs,Payment/Invoice,Payment confirmation delayed,Medium,1.47,11.16,Closed,Yes,Within 8 Hours
+HD0250,4/9/2026,Postgraduate Student,College of Food Science,Admission,Admission status not displaying,Medium,1.61,1.99,Closed,Yes,Within 8 Hours
+HD0251,4/10/2026,Student,College of Animal Science,Internet/Network,Cannot access campus Internet,Medium,4.33,21.14,Closed,Yes,Within 8 Hours
+HD0252,6/6/2026,Student,Postgraduate School,Email,Unable to access staff email,High,0.7,9.44,In Progress,No,Within 8 Hours
+HD0253,8/24/2026,Student,Academic Planning,Registration,Registration page not responding,Low,2.66,2.06,Closed,Yes,Within 8 Hours
+HD0254,7/7/2026,Staff,ICTREC,Email,Mailbox access problem,Medium,1.88,2.61,Closed,Yes,Within 8 Hours
+HD0255,5/1/2026,Postgraduate Student,College of Animal Science,Portal,Unable to login to student portal,Medium,2.67,2.31,Closed,Yes,Within 8 Hours
+HD0256,7/14/2026,Student,College of Food Science,Email,University email not working,Medium,3.02,4.44,Closed,Yes,Within 8 Hours
+HD0257,9/1/2026,Staff,College of Engineering,Portal,Unable to login to student portal,Medium,2.28,9.33,Closed,Yes,Within 8 Hours
+HD0258,4/29/2026,Postgraduate Student,Postgraduate School,Payment/Invoice,Receipt cannot be generated,Medium,1.89,44.08,Pending,No,Within 8 Hours
+HD0259,2/4/2026,Staff,ICTREC,Payment/Invoice,Outstanding invoice still showing after payment,Low,5.01,1.59,Closed,Yes,Within 8 Hours
+HD0260,5/3/2026,Staff,Library,Email,University email not working,High,1.58,9.51,Closed,Yes,Within 8 Hours
+HD0261,2/22/2026,Staff,Library,Email,Unable to access staff email,Medium,1.04,36.45,In Progress,No,Within 8 Hours
+HD0262,1/9/2026,Postgraduate Student,College of Agricultural Management,Portal,Programme information not updating,High,1.04,7.33,Closed,Yes,Within 8 Hours
+HD0263,1/17/2026,Postgraduate Student,College of Computing Sciences,Portal,Portal session keeps expiring,Medium,1.71,1.23,Closed,Yes,Within 8 Hours
+HD0264,1/19/2026,Staff,Library,Portal,Programme information not updating,Low,1.55,2.24,Closed,Yes,Within 8 Hours
+HD0265,6/26/2026,Student,ICTREC,Others,Other ICT service issue,Medium,3,15.95,Pending,No,Within 8 Hours
+HD0266,5/27/2026,Postgraduate Student,College of Plant Science,Website/Multimedia,Website content correction request,Medium,3.69,42.95,In Progress,No,Within 8 Hours
+HD0267,6/18/2026,Student,College of Plant Science,Clearance,Clearance submission error,Low,3.66,1.29,Closed,Yes,Within 8 Hours
+HD0268,2/21/2026,Staff,College of Food Science,Hardware,Scanner malfunction,Medium,1.82,25.89,Pending,No,Within 8 Hours
+HD0269,5/28/2026,Staff,ICTREC,Software/MIS,MIS application not responding,High,0.93,6.66,Closed,Yes,Within 8 Hours
+HD0270,8/29/2026,Student,Library,Registration,Unable to submit course registration,Low,6.61,1.95,Closed,Yes,Within 8 Hours
+HD0271,6/8/2026,Postgraduate Student,Library,Payment/Invoice,Payment not reflecting on portal,Low,6.02,1.44,Closed,Yes,Within 8 Hours
+HD0272,8/25/2026,Postgraduate Student,College of Food Science,Portal,Programme information not updating,Low,5.09,5.53,Closed,Yes,Within 8 Hours
+HD0273,8/27/2026,Student,Library,Student Information,Biodata information needs correction,High,0.39,3.01,Closed,Yes,Within 8 Hours
+HD0274,5/4/2026,Student,Library,ID Card,ID card printing problem,Medium,3.57,3.75,Closed,Yes,Within 8 Hours
+HD0275,7/8/2026,Student,Academic Planning,Payment/Invoice,Receipt cannot be generated,Medium,3.19,3.71,Closed,Yes,Within 8 Hours
+HD0276,3/2/2026,Student,College of Engineering,Software/MIS,Software installation request,Medium,2.73,6.68,Pending,No,Within 8 Hours
+HD0277,4/12/2026,Student,College of Agricultural Management,Email,Password reset required for email,Low,7.22,2.95,Closed,Yes,Within 8 Hours
+HD0278,7/9/2026,Postgraduate Student,College of Veterinary Medicine,Internet/Network,Network connection unavailable,Low,4.58,2.55,Closed,Yes,Within 8 Hours
+HD0279,2/21/2026,Postgraduate Student,College of Engineering,Registration,Registered course not displaying,Low,2.91,28.77,In Progress,No,Within 8 Hours
+HD0280,7/19/2026,Student,ICTREC,ID Card,Lost ID card replacement request,High,1.86,4.14,Closed,Yes,Within 8 Hours
+HD0281,4/10/2026,Postgraduate Student,Library,Portal,Unable to login to student portal,Medium,3.05,49.97,Closed,Yes,Within 8 Hours
+HD0282,4/20/2026,Postgraduate Student,College of Veterinary Medicine,ID Card,Unable to process ID card,Low,6.14,1.89,Closed,Yes,Within 8 Hours
+HD0283,4/25/2026,Staff,Student Affairs,Email,University email not working,Medium,5.03,44.21,Pending,No,Within 8 Hours
+HD0284,3/10/2026,Student,College of Plant Science,Portal,Portal page not loading,Low,1.24,17.23,Pending,No,Within 8 Hours
+HD0285,3/22/2026,Staff,College of Animal Science,Payment/Invoice,Outstanding invoice still showing after payment,Low,1.36,2.39,Closed,Yes,Within 8 Hours
+HD0286,5/26/2026,Postgraduate Student,ICTREC,Software/MIS,Application error during transaction,Low,3.84,10.9,Closed,Yes,Within 8 Hours
+HD0287,8/12/2026,Student,College of Animal Science,ID Card,Unable to process ID card,Medium,3.11,43.58,In Progress,No,Within 8 Hours
+HD0288,8/29/2026,Student,ICTREC,Clearance,Clearance process showing incomplete,Medium,4.1,2.7,Closed,Yes,Within 8 Hours
+HD0289,2/10/2026,Staff,Academic Planning,Email,Password reset required for email,Low,4.33,35.93,Pending,No,Within 8 Hours
+HD0290,6/27/2026,Student,College of Environmental Resources,Payment/Invoice,Invoice not generated,Medium,1.15,19.93,In Progress,No,Within 8 Hours
+HD0291,1/18/2026,Student,Postgraduate School,Hardware,Desktop computer not starting,Medium,3.13,5.83,Closed,Yes,Within 8 Hours
+HD0292,4/16/2026,Student,College of Engineering,Internet/Network,Intermittent network connectivity,High,2.12,34.03,In Progress,No,Within 8 Hours
+HD0293,6/28/2026,Student,College of Engineering,ID Card,ID card printing problem,High,1.66,6.4,Closed,Yes,Within 8 Hours
+HD0294,7/6/2026,Student,Library,Payment/Invoice,Payment not reflecting on portal,Low,2.95,12.48,Pending,No,Within 8 Hours
+HD0295,1/31/2026,Student,College of Computing Sciences,Payment/Invoice,Payment confirmation delayed,Medium,4.1,3.15,Closed,Yes,Within 8 Hours
+HD0296,5/26/2026,Staff,College of Plant Science,Internet/Network,Intermittent network connectivity,Medium,2.7,9.96,Closed,Yes,Within 8 Hours
+HD0297,7/9/2026,Postgraduate Student,College of Computing Sciences,Email,Password reset required for email,Medium,3.38,44.02,In Progress,No,Within 8 Hours
+HD0298,3/14/2026,Postgraduate Student,College of Plant Science,Others,Help needed with university application,Medium,4.6,2.85,Closed,Yes,Within 8 Hours
+HD0299,4/7/2026,Student,Student Affairs,Registration,Course allocation not updating,Low,3.28,1.5,Closed,Yes,Within 8 Hours
+HD0300,2/8/2026,Postgraduate Student,College of Animal Science,Internet/Network,Intermittent network connectivity,Medium,2.04,7.81,Closed,Yes,Within 8 Hours
+HD0301,8/3/2026,Postgraduate Student,College of Agricultural Management,Student Information,Matriculation information issue,Medium,3.94,46.92,Pending,No,Within 8 Hours
+HD0302,4/16/2026,Staff,College of Environmental Resources,Portal,Portal page not loading,Medium,4.19,18.24,In Progress,No,Within 8 Hours
+HD0303,7/25/2026,Staff,Postgraduate School,Admission,Admission application issue,Medium,3.26,16.56,Closed,Yes,Within 8 Hours
+HD0304,7/20/2026,Postgraduate Student,Library,Portal,Programme information not updating,Critical,0.52,2.89,Closed,Yes,Within 8 Hours
+HD0305,1/22/2026,Staff,Library,Student Information,Academic information not updated,High,0.56,39.42,Pending,No,Within 8 Hours
+HD0306,4/23/2026,Student,Student Affairs,Registration,Registered course not displaying,Low,5.45,9.11,Pending,No,Within 8 Hours
+HD0307,8/15/2026,Staff,College of Environmental Resources,Others,System access request,Medium,3.03,1.91,Closed,Yes,Within 8 Hours
+HD0308,2/1/2026,Student,Postgraduate School,Email,Mailbox access problem,Medium,9.98,33.62,Pending,No,Beyond 8 Hours
+HD0309,7/27/2026,Student,College of Environmental Resources,Payment/Invoice,Receipt cannot be generated,Critical,0.85,14.43,Closed,Yes,Within 8 Hours
+HD0310,6/30/2026,Staff,Library,Portal,Programme information not updating,High,1.95,5.85,Closed,Yes,Within 8 Hours
+HD0311,1/11/2026,Student,College of Veterinary Medicine,Registration,Registration page not responding,Medium,1.68,7.06,Closed,Yes,Within 8 Hours
+HD0312,7/24/2026,Student,College of Food Science,Payment/Invoice,Invoice not generated,Medium,7.32,13.19,Closed,Yes,Within 8 Hours
+HD0313,7/31/2026,Student,College of Food Science,Registration,Course allocation not updating,Medium,6.24,3.73,Closed,Yes,Within 8 Hours
+HD0314,7/13/2026,Staff,College of Veterinary Medicine,Portal,Unable to login to student portal,Medium,1.51,3.66,Closed,Yes,Within 8 Hours
+HD0315,7/28/2026,Student,College of Engineering,Internet/Network,Intermittent network connectivity,Medium,2.68,12.45,Closed,Yes,Within 8 Hours
+HD0316,8/19/2026,Postgraduate Student,College of Veterinary Medicine,Internet/Network,Slow Internet connection,Medium,1.02,16.52,Closed,Yes,Within 8 Hours
+HD0317,7/27/2026,Staff,Library,Email,Unable to access staff email,Low,3.48,1.89,Closed,Yes,Within 8 Hours
+HD0318,3/13/2026,Postgraduate Student,Bursary,Portal,Student profile not displaying correctly,Medium,1.49,1.35,Closed,Yes,Within 8 Hours
+HD0319,5/2/2026,Student,College of Agricultural Management,Registration,Registration page not responding,Medium,4.09,15.69,Closed,Yes,Within 8 Hours
+HD0320,6/26/2026,Postgraduate Student,Postgraduate School,Software/MIS,Software installation request,High,0.74,3.69,Closed,Yes,Within 8 Hours
+HD0321,4/14/2026,Staff,Registry,Portal,Portal page not loading,Medium,2.16,11.75,Closed,Yes,Within 8 Hours
+HD0322,8/28/2026,Staff,College of Agricultural Management,Portal,Portal page not loading,Medium,2.25,1.5,Closed,Yes,Within 8 Hours
+HD0323,8/8/2026,Postgraduate Student,Bursary,Others,System access request,Low,3.32,1.81,Closed,Yes,Within 8 Hours
+HD0324,5/28/2026,Staff,College of Computing Sciences,Portal,Portal session keeps expiring,Low,0.86,2.09,Closed,Yes,Within 8 Hours
+HD0325,7/18/2026,Student,College of Food Science,Registration,Course allocation not updating,Medium,2.29,16.96,Closed,Yes,Within 8 Hours
+HD0326,7/14/2026,Student,College of Plant Science,Portal,Student profile not displaying correctly,Low,10.51,26.8,Pending,No,Beyond 8 Hours
+HD0327,8/3/2026,Staff,Postgraduate School,Email,Mailbox access problem,High,1.29,37.92,Pending,No,Within 8 Hours
+HD0328,4/30/2026,Staff,Registry,Registration,Registered course not displaying,Low,15.65,2.94,Closed,Yes,Beyond 8 Hours
+HD0329,7/31/2026,Student,College of Animal Science,Website/Multimedia,University webpage not updating,High,1.51,34.94,Pending,No,Within 8 Hours
+HD0330,2/26/2026,Postgraduate Student,College of Veterinary Medicine,Website/Multimedia,Multimedia support request,Low,4.24,39.83,Pending,No,Within 8 Hours
+HD0331,3/20/2026,Staff,College of Plant Science,Email,Unable to access staff email,Medium,1.9,3.21,Closed,Yes,Within 8 Hours
+HD0332,4/20/2026,Staff,College of Veterinary Medicine,Student Information,Biodata information needs correction,Low,3.73,47.68,In Progress,No,Within 8 Hours
+HD0333,8/5/2026,Student,College of Food Science,Website/Multimedia,Website content correction request,Low,2.57,2.32,Closed,Yes,Within 8 Hours
+HD0334,4/21/2026,Staff,College of Animal Science,Software/MIS,MIS application not responding,Medium,2.26,17.87,Closed,Yes,Within 8 Hours
+HD0335,8/17/2026,Student,College of Agricultural Management,Portal,Programme information not updating,High,0.35,10.28,Closed,Yes,Within 8 Hours
+HD0336,6/24/2026,Student,ICTREC,Student Information,Biodata information needs correction,High,2.98,1.31,Closed,Yes,Within 8 Hours
+HD0337,5/11/2026,Postgraduate Student,College of Agricultural Management,Website/Multimedia,Website content correction request,Critical,0.66,5.11,Closed,Yes,Within 8 Hours
+HD0338,7/25/2026,Staff,College of Plant Science,Software/MIS,Application access problem,Low,1.75,2.21,Closed,Yes,Within 8 Hours
+HD0339,2/14/2026,Student,College of Veterinary Medicine,Admission,O'Level verification problem,Low,2.06,8.33,Closed,Yes,Within 8 Hours
+HD0340,8/16/2026,Staff,Library,Portal,Portal page not loading,High,2.51,17.51,In Progress,No,Within 8 Hours
+HD0341,7/9/2026,Student,College of Veterinary Medicine,ID Card,ID card details incorrect,Low,5.65,1.12,Closed,Yes,Within 8 Hours
+HD0342,2/7/2026,Postgraduate Student,Registry,Internet/Network,Wi-Fi connection unstable,Low,2.85,4.58,Closed,Yes,Within 8 Hours
+HD0343,4/23/2026,Staff,College of Food Science,Email,Password reset required for email,High,0.77,9.27,Closed,Yes,Within 8 Hours
+HD0344,3/22/2026,Student,College of Food Science,Registration,Course registration error,Low,3.33,2.22,Closed,Yes,Within 8 Hours
+HD0345,6/10/2026,Student,College of Veterinary Medicine,Hardware,Printer not responding,Low,5.62,5.56,Closed,Yes,Within 8 Hours
+HD0346,4/28/2026,Student,College of Food Science,Registration,Registered course not displaying,High,1.23,14.05,Pending,No,Within 8 Hours
+HD0347,7/26/2026,Student,College of Environmental Resources,Portal,Portal session keeps expiring,Medium,1.43,5.93,Closed,Yes,Within 8 Hours
+HD0348,3/18/2026,Student,Library,Internet/Network,Intermittent network connectivity,Medium,3.6,35,Pending,No,Within 8 Hours
+HD0349,2/22/2026,Postgraduate Student,Academic Planning,Software/MIS,Software installation request,Low,4.55,18.41,Pending,No,Within 8 Hours
+HD0350,6/6/2026,Student,College of Animal Science,Portal,Portal session keeps expiring,Low,6.32,1.92,Closed,Yes,Within 8 Hours
+HD0351,5/30/2026,Student,College of Engineering,Website/Multimedia,Event information needs to be uploaded,Low,2.85,4.28,Closed,Yes,Within 8 Hours
+HD0352,1/15/2026,Student,Postgraduate School,Email,University email not working,Low,2.58,45.84,In Progress,No,Within 8 Hours
+HD0353,6/17/2026,Student,College of Plant Science,Payment/Invoice,Receipt cannot be generated,Medium,1.1,8.16,Closed,Yes,Within 8 Hours
+HD0354,2/13/2026,Student,Registry,ID Card,ID card printing problem,High,0.74,17.03,Closed,Yes,Within 8 Hours
+HD0355,8/9/2026,Postgraduate Student,College of Veterinary Medicine,Payment/Invoice,Payment not reflecting on portal,Medium,0.83,16.57,Closed,Yes,Within 8 Hours
+HD0356,6/22/2026,Staff,Registry,Internet/Network,Slow Internet connection,Medium,2.92,21.03,Pending,No,Within 8 Hours
+HD0357,7/8/2026,Student,College of Animal Science,Admission,Change of course not reflecting,Medium,1.93,6.34,Closed,Yes,Within 8 Hours
+HD0358,3/15/2026,Postgraduate Student,Student Affairs,Payment/Invoice,Payment not reflecting on portal,High,1.47,57.62,Closed,Yes,Within 8 Hours
+HD0359,1/19/2026,Postgraduate Student,College of Veterinary Medicine,Internet/Network,Wi-Fi connection unstable,Medium,2.77,6.74,Closed,Yes,Within 8 Hours
+HD0360,2/3/2026,Staff,Postgraduate School,Email,University email not working,High,1.23,5.62,Closed,Yes,Within 8 Hours
+HD0361,8/28/2026,Postgraduate Student,College of Computing Sciences,Registration,Registered course not displaying,Low,4.5,0.93,Closed,Yes,Within 8 Hours
+HD0362,8/27/2026,Student,Academic Planning,Student Information,Academic information not updated,Low,1.81,17.39,Pending,No,Within 8 Hours
+HD0363,5/17/2026,Staff,Registry,Portal,Programme information not updating,Medium,2.86,46.07,In Progress,No,Within 8 Hours
+HD0364,1/27/2026,Staff,ICTREC,Portal,Student profile not displaying correctly,High,1.52,6.34,Closed,Yes,Within 8 Hours
+HD0365,3/8/2026,Student,Student Affairs,Portal,Programme information not updating,High,1.11,3.05,Closed,Yes,Within 8 Hours
+HD0366,7/27/2026,Postgraduate Student,Postgraduate School,Email,Unable to access staff email,High,1.67,3.09,Closed,Yes,Within 8 Hours
+HD0367,7/1/2026,Staff,College of Computing Sciences,Portal,Portal page not loading,Medium,3.25,45.94,In Progress,No,Within 8 Hours
+HD0368,3/6/2026,Postgraduate Student,College of Agricultural Management,Portal,Student profile not displaying correctly,Low,6.69,2.95,Closed,Yes,Within 8 Hours
+HD0369,5/18/2026,Student,Registry,Student Information,Biodata information needs correction,High,1.73,9.58,Closed,Yes,Within 8 Hours
+HD0370,8/2/2026,Staff,Registry,Clearance,Clearance process showing incomplete,Low,9.5,5.48,Closed,Yes,Beyond 8 Hours
+HD0371,8/30/2026,Staff,Bursary,Email,Unable to access staff email,Low,1.38,35.43,Pending,No,Within 8 Hours
+HD0372,7/21/2026,Student,Library,Admission,Admission status not displaying,High,1.06,6.33,Closed,Yes,Within 8 Hours
+HD0373,4/6/2026,Student,College of Animal Science,Internet/Network,Slow Internet connection,Medium,3.46,14.72,In Progress,No,Within 8 Hours
+HD0374,7/4/2026,Postgraduate Student,Registry,Payment/Invoice,Invoice not generated,High,1.66,4.28,Closed,Yes,Within 8 Hours
+HD0375,4/16/2026,Staff,Bursary,Portal,Unable to login to student portal,Medium,1.86,1.59,Closed,Yes,Within 8 Hours
+HD0376,5/27/2026,Postgraduate Student,Bursary,Admission,Admission status not displaying,High,0.9,16.49,Pending,No,Within 8 Hours
+HD0377,4/10/2026,Student,College of Computing Sciences,Registration,Registered course not displaying,Low,2.22,5.62,Closed,Yes,Within 8 Hours
+HD0378,4/28/2026,Student,Student Affairs,Student Information,Biodata information needs correction,Low,2.25,51.04,Pending,No,Within 8 Hours
+HD0379,4/25/2026,Staff,Registry,Software/MIS,Application error during transaction,High,1.97,41.58,Pending,No,Within 8 Hours
+HD0380,3/16/2026,Postgraduate Student,College of Agricultural Management,Portal,Portal page not loading,Medium,1.62,6.26,Closed,Yes,Within 8 Hours
+HD0381,5/12/2026,Student,College of Environmental Resources,Website/Multimedia,Website page not displaying correctly,Medium,1.89,4.3,Closed,Yes,Within 8 Hours
+HD0382,7/28/2026,Staff,College of Agricultural Management,Email,Unable to access staff email,Medium,10.63,4.31,Closed,Yes,Beyond 8 Hours
+HD0383,4/3/2026,Postgraduate Student,College of Agricultural Management,ID Card,ID card not yet available,Medium,4.89,27.1,In Progress,No,Within 8 Hours
+HD0384,3/17/2026,Student,College of Environmental Resources,Payment/Invoice,Invoice not generated,Low,3.73,9.48,Closed,Yes,Within 8 Hours
+HD0385,1/30/2026,Postgraduate Student,College of Engineering,Others,Other ICT service issue,Critical,0.57,21.11,Closed,Yes,Within 8 Hours
+HD0386,6/1/2026,Postgraduate Student,ICTREC,Internet/Network,Wi-Fi connection unstable,High,2.21,39.49,Pending,No,Within 8 Hours
+HD0387,8/26/2026,Student,College of Environmental Resources,Payment/Invoice,Payment confirmation delayed,High,2.12,13.17,Closed,Yes,Within 8 Hours
+HD0388,7/31/2026,Staff,College of Environmental Resources,Admission,Admission application issue,Medium,3.66,26.67,In Progress,No,Within 8 Hours
+HD0389,3/30/2026,Student,College of Computing Sciences,Payment/Invoice,Invoice not generated,Medium,1.74,14.96,In Progress,No,Within 8 Hours
+HD0390,7/4/2026,Postgraduate Student,Bursary,Portal,Student profile not displaying correctly,Low,3.65,38.52,In Progress,No,Within 8 Hours
+HD0391,6/4/2026,Staff,Registry,Software/MIS,Software installation request,Medium,2.87,2.82,Closed,Yes,Within 8 Hours
+HD0392,6/20/2026,Staff,College of Food Science,Payment/Invoice,Receipt cannot be generated,High,1.85,10.41,Closed,Yes,Within 8 Hours
+HD0393,6/4/2026,Student,Academic Planning,Admission,Admission portal error,High,2.04,21.89,Pending,No,Within 8 Hours
+HD0394,4/15/2026,Student,College of Food Science,Admission,Admission status not displaying,High,2.37,38.37,Pending,No,Within 8 Hours
+HD0395,9/1/2026,Student,Academic Planning,Email,Mailbox access problem,Low,3.66,0.85,Closed,Yes,Within 8 Hours
+HD0396,8/3/2026,Student,College of Engineering,Payment/Invoice,Invoice not generated,Medium,3.29,6.29,Closed,Yes,Within 8 Hours
+HD0397,2/1/2026,Student,Student Affairs,ID Card,ID card details incorrect,Low,4.41,8.02,Pending,No,Within 8 Hours
+HD0398,5/24/2026,Staff,Academic Planning,Registration,Course allocation not updating,Medium,1.43,10.3,Closed,Yes,Within 8 Hours
+HD0399,3/21/2026,Postgraduate Student,College of Veterinary Medicine,Software/MIS,MIS application not responding,Low,3.72,23.49,Closed,Yes,Within 8 Hours
+HD0400,7/11/2026,Student,Registry,Internet/Network,Network connection unavailable,Low,3.86,3.4,Closed,Yes,Within 8 Hours
+HD0401,6/21/2026,Student,College of Environmental Resources,Student Information,Academic information not updated,Medium,4.36,2.84,Closed,Yes,Within 8 Hours
+HD0402,4/19/2026,Student,College of Computing Sciences,Website/Multimedia,University webpage not updating,Medium,2.74,2.94,Closed,Yes,Within 8 Hours
+HD0403,5/25/2026,Student,College of Veterinary Medicine,Admission,Change of course not reflecting,Low,2.99,12.45,Pending,No,Within 8 Hours
+HD0404,6/17/2026,Student,ICTREC,Payment/Invoice,Outstanding invoice still showing after payment,Medium,2.94,10.14,Closed,Yes,Within 8 Hours
+HD0405,3/13/2026,Student,Student Affairs,Portal,Portal session keeps expiring,Medium,5.19,2.22,Closed,Yes,Within 8 Hours
+HD0406,3/13/2026,Staff,College of Agricultural Management,Email,Password reset required for email,Low,3.43,5.82,Closed,Yes,Within 8 Hours
+HD0407,5/23/2026,Student,Bursary,Internet/Network,Wi-Fi connection unstable,Low,8.42,3.79,Closed,Yes,Beyond 8 Hours
+HD0408,4/22/2026,Student,College of Plant Science,Hardware,Desktop computer not starting,High,2.65,34.86,In Progress,No,Within 8 Hours
+HD0409,7/6/2026,Postgraduate Student,College of Animal Science,Student Information,Matriculation information issue,Low,4.4,3.86,Closed,Yes,Within 8 Hours
+HD0410,4/29/2026,Student,College of Veterinary Medicine,Email,Mailbox access problem,Low,3.98,5,Closed,Yes,Within 8 Hours
+HD0411,6/28/2026,Student,Postgraduate School,Others,Help needed with university application,Low,2.86,5.42,Closed,Yes,Within 8 Hours
+HD0412,8/27/2026,Postgraduate Student,Bursary,Others,Other ICT service issue,Low,13.46,9.66,Pending,No,Beyond 8 Hours
+HD0413,7/25/2026,Staff,Student Affairs,Email,Mailbox access problem,Medium,2.03,11.79,Closed,Yes,Within 8 Hours
+HD0414,9/2/2026,Staff,Bursary,Email,Unable to access staff email,Medium,6.2,3.26,Closed,Yes,Within 8 Hours
+HD0415,8/17/2026,Student,Postgraduate School,Portal,Student profile not displaying correctly,High,1.19,4.21,Closed,Yes,Within 8 Hours
+HD0416,6/12/2026,Student,College of Animal Science,Payment/Invoice,Payment not reflecting on portal,Low,1.81,1.65,Closed,Yes,Within 8 Hours
+HD0417,3/14/2026,Student,Academic Planning,Admission,Change of course not reflecting,Medium,1.5,9.46,In Progress,No,Within 8 Hours
+HD0418,6/29/2026,Staff,Student Affairs,Software/MIS,Software installation request,High,1.47,9.96,Closed,Yes,Within 8 Hours
+HD0419,7/10/2026,Student,Student Affairs,Website/Multimedia,Multimedia support request,High,3.52,2.64,Closed,Yes,Within 8 Hours
+HD0420,8/15/2026,Student,Academic Planning,ID Card,Unable to process ID card,High,2.58,4.74,Closed,Yes,Within 8 Hours
+HD0421,7/23/2026,Student,Registry,Portal,Student profile not displaying correctly,Medium,2.53,42.93,Pending,No,Within 8 Hours
+HD0422,5/1/2026,Student,Academic Planning,Portal,Portal page not loading,High,0.81,6.48,Closed,Yes,Within 8 Hours
+HD0423,2/5/2026,Student,ICTREC,Payment/Invoice,Receipt cannot be generated,Medium,2.85,7.57,Closed,Yes,Within 8 Hours
+HD0424,6/4/2026,Staff,College of Environmental Resources,Internet/Network,Slow Internet connection,Low,4.46,16.44,Closed,Yes,Within 8 Hours
+HD0425,2/15/2026,Postgraduate Student,College of Food Science,Payment/Invoice,Payment not reflecting on portal,Low,2.68,38.75,Pending,No,Within 8 Hours
+HD0426,4/19/2026,Student,College of Veterinary Medicine,Internet/Network,Cannot access campus Internet,Medium,1.85,4.26,Closed,Yes,Within 8 Hours
+HD0427,6/7/2026,Postgraduate Student,College of Computing Sciences,Website/Multimedia,Multimedia support request,High,1.06,15.4,Pending,No,Within 8 Hours
+HD0428,4/4/2026,Student,College of Food Science,ID Card,ID card not yet available,Medium,5.68,2.95,Closed,Yes,Within 8 Hours
+HD0429,1/31/2026,Staff,College of Veterinary Medicine,Internet/Network,Intermittent network connectivity,High,0.95,10.57,Closed,Yes,Within 8 Hours
+HD0430,2/1/2026,Staff,College of Plant Science,Others,Other ICT service issue,Medium,1.92,5.99,Closed,Yes,Within 8 Hours
+HD0431,8/21/2026,Student,ICTREC,Payment/Invoice,Payment confirmation delayed,Low,4.25,1.12,Closed,Yes,Within 8 Hours
+HD0432,7/29/2026,Postgraduate Student,Postgraduate School,Internet/Network,Cannot access campus Internet,High,3.51,24.99,Pending,No,Within 8 Hours
+HD0433,4/22/2026,Postgraduate Student,College of Veterinary Medicine,Payment/Invoice,Receipt cannot be generated,Critical,0.57,7,Closed,Yes,Within 8 Hours
+HD0434,6/29/2026,Student,College of Environmental Resources,Admission,Admission application issue,Medium,3.04,6.08,Closed,Yes,Within 8 Hours
+HD0435,6/22/2026,Postgraduate Student,College of Engineering,Hardware,Computer system performance is slow,Medium,3.73,28.22,In Progress,No,Within 8 Hours
+HD0436,8/26/2026,Student,College of Food Science,Portal,Student profile not displaying correctly,Medium,2.36,2.36,Closed,Yes,Within 8 Hours
+HD0437,4/22/2026,Student,Library,Admission,Change of course not reflecting,Low,1.78,19.92,Pending,No,Within 8 Hours
+HD0438,6/3/2026,Staff,College of Animal Science,Internet/Network,Wi-Fi connection unstable,Medium,2.55,19.62,Closed,Yes,Within 8 Hours
+HD0439,3/22/2026,Postgraduate Student,College of Plant Science,ID Card,Lost ID card replacement request,High,1.13,6.3,Closed,Yes,Within 8 Hours
+HD0440,8/21/2026,Student,Bursary,Website/Multimedia,Website content correction request,Medium,2.58,25.22,In Progress,No,Within 8 Hours
+HD0441,3/26/2026,Student,Registry,Payment/Invoice,Receipt cannot be generated,Medium,10.44,3.89,Closed,Yes,Beyond 8 Hours
+HD0442,7/25/2026,Staff,Library,Portal,Portal page not loading,Medium,1.99,9.7,Pending,No,Within 8 Hours
+HD0443,4/10/2026,Student,College of Agricultural Management,ID Card,Unable to process ID card,Medium,3.78,43.46,In Progress,No,Within 8 Hours
+HD0444,3/9/2026,Postgraduate Student,Library,Hardware,Desktop computer not starting,Medium,3.58,6.05,Closed,Yes,Within 8 Hours
+HD0445,2/16/2026,Staff,Bursary,Website/Multimedia,University webpage not updating,Medium,3.6,8.17,Closed,Yes,Within 8 Hours
+HD0446,8/20/2026,Staff,College of Animal Science,Portal,Programme information not updating,Medium,4.08,5.52,Closed,Yes,Within 8 Hours
+HD0447,7/31/2026,Staff,College of Engineering,Portal,Portal page not loading,Low,6.83,4.63,Closed,Yes,Within 8 Hours
+HD0448,2/17/2026,Postgraduate Student,Bursary,Internet/Network,Cannot access campus Internet,High,3.21,11.86,Closed,Yes,Within 8 Hours
+HD0449,6/6/2026,Student,College of Veterinary Medicine,Admission,Change of course not reflecting,High,1.37,33.8,In Progress,No,Within 8 Hours
+HD0450,3/10/2026,Student,Registry,ID Card,Unable to process ID card,Medium,5.05,2.52,Closed,Yes,Within 8 Hours
+HD0451,6/23/2026,Postgraduate Student,College of Veterinary Medicine,Internet/Network,Wi-Fi connection unstable,Medium,3.18,4.73,Closed,Yes,Within 8 Hours
+HD0452,3/18/2026,Student,ICTREC,ID Card,Lost ID card replacement request,Medium,2.64,9.82,Closed,Yes,Within 8 Hours
+HD0453,2/25/2026,Student,College of Environmental Resources,Portal,Portal page not loading,High,1.67,5.21,Closed,Yes,Within 8 Hours
+HD0454,3/6/2026,Student,College of Animal Science,Registration,Registered course not displaying,Medium,1.23,8.44,Closed,Yes,Within 8 Hours
+HD0455,7/9/2026,Postgraduate Student,College of Veterinary Medicine,Admission,O'Level verification problem,Low,5.42,44,Pending,No,Within 8 Hours
+HD0456,1/15/2026,Staff,Student Affairs,ID Card,ID card not yet available,Medium,2.2,21.13,Pending,No,Within 8 Hours
+HD0457,6/19/2026,Postgraduate Student,Registry,Admission,Admission status not displaying,Low,4.36,7.43,Closed,Yes,Within 8 Hours
+HD0458,2/3/2026,Staff,Student Affairs,Payment/Invoice,Payment not reflecting on portal,Medium,2.47,6.59,Closed,Yes,Within 8 Hours
+HD0459,7/28/2026,Postgraduate Student,College of Food Science,Student Information,Academic information not updated,High,2.1,5.71,Closed,Yes,Within 8 Hours
+HD0460,5/8/2026,Postgraduate Student,College of Computing Sciences,Portal,Portal page not loading,Low,2.97,34.49,Pending,No,Within 8 Hours
+HD0461,8/18/2026,Staff,Postgraduate School,Internet/Network,Network connection unavailable,Medium,4.69,46.88,Pending,No,Within 8 Hours
+HD0462,1/8/2026,Staff,Registry,Portal,Portal session keeps expiring,Medium,2.8,9.17,Closed,Yes,Within 8 Hours
+HD0463,4/1/2026,Student,College of Environmental Resources,Admission,Admission application issue,Critical,1.54,2.97,Closed,Yes,Within 8 Hours
+HD0464,6/18/2026,Student,College of Veterinary Medicine,Admission,Admission application issue,Medium,1.91,6.25,Closed,Yes,Within 8 Hours
+HD0465,2/14/2026,Postgraduate Student,Academic Planning,Software/MIS,Application access problem,Low,8.99,3.51,Closed,Yes,Beyond 8 Hours
+HD0466,3/17/2026,Postgraduate Student,Registry,Registration,Course allocation not updating,Medium,1.92,17.64,Closed,Yes,Within 8 Hours
+HD0467,5/31/2026,Postgraduate Student,College of Agricultural Management,Internet/Network,Slow Internet connection,High,0.68,5.79,Closed,Yes,Within 8 Hours
+HD0468,1/9/2026,Staff,College of Engineering,Website/Multimedia,University webpage not updating,Critical,1.02,4.69,Closed,Yes,Within 8 Hours
+HD0469,6/17/2026,Student,ICTREC,Registration,Course registration error,High,0.86,10.48,Closed,Yes,Within 8 Hours
+HD0470,5/1/2026,Student,College of Animal Science,Registration,Unable to submit course registration,Medium,2.97,9.21,Closed,Yes,Within 8 Hours
+HD0471,3/2/2026,Postgraduate Student,College of Animal Science,Hardware,Keyboard or mouse not working,Medium,1.29,52.5,Closed,Yes,Within 8 Hours
+HD0472,1/16/2026,Staff,Student Affairs,Payment/Invoice,Outstanding invoice still showing after payment,Medium,3.72,26.68,In Progress,No,Within 8 Hours
+HD0473,2/22/2026,Postgraduate Student,College of Food Science,Software/MIS,System error during data entry,Low,10.49,1.83,Closed,Yes,Beyond 8 Hours
+HD0474,8/30/2026,Student,College of Animal Science,Website/Multimedia,Website content correction request,Medium,1.12,7.69,Closed,Yes,Within 8 Hours
+HD0475,2/8/2026,Postgraduate Student,College of Animal Science,Admission,O'Level verification problem,Medium,2.54,6.18,In Progress,No,Within 8 Hours
+HD0476,8/28/2026,Staff,ICTREC,Admission,Admission portal error,Medium,2.28,35.06,In Progress,No,Within 8 Hours
+HD0477,3/28/2026,Student,Registry,Internet/Network,Slow Internet connection,Medium,1.31,15.62,Closed,Yes,Within 8 Hours
+HD0478,3/21/2026,Postgraduate Student,Postgraduate School,Payment/Invoice,Invoice not generated,Low,3.63,6.2,Closed,Yes,Within 8 Hours
+HD0479,8/13/2026,Staff,College of Environmental Resources,Portal,Programme information not updating,Low,4.59,2.92,Closed,Yes,Within 8 Hours
+HD0480,4/3/2026,Student,Library,Admission,Admission application issue,Medium,3.56,11.57,In Progress,No,Within 8 Hours
+HD0481,5/28/2026,Student,College of Food Science,Admission,Change of course not reflecting,Medium,3.7,11.6,Closed,Yes,Within 8 Hours
+HD0482,7/30/2026,Student,College of Veterinary Medicine,Email,Mailbox access problem,Low,4.23,3.96,Closed,Yes,Within 8 Hours
+HD0483,7/16/2026,Staff,Bursary,Portal,Unable to login to student portal,Medium,2.47,47.31,Pending,No,Within 8 Hours
+HD0484,4/6/2026,Postgraduate Student,College of Food Science,Admission,Change of course not reflecting,Low,2.62,10.3,Pending,No,Within 8 Hours
+HD0485,3/6/2026,Postgraduate Student,College of Plant Science,Website/Multimedia,Website content correction request,High,1.47,1.99,Closed,Yes,Within 8 Hours
+HD0486,7/25/2026,Postgraduate Student,Student Affairs,Hardware,Desktop computer not starting,High,1.61,19.13,In Progress,No,Within 8 Hours
+HD0487,4/28/2026,Student,Library,Email,Mailbox access problem,High,2.38,44.28,Pending,No,Within 8 Hours
+HD0488,7/9/2026,Student,College of Environmental Resources,Admission,Admission portal error,High,1.17,18.36,In Progress,No,Within 8 Hours
+HD0489,2/4/2026,Postgraduate Student,Registry,Internet/Network,Cannot access campus Internet,Critical,0.62,2.07,Closed,Yes,Within 8 Hours
+HD0490,9/1/2026,Student,Bursary,Registration,Registration page not responding,High,0.63,34.31,Closed,Yes,Within 8 Hours
+HD0491,8/8/2026,Staff,College of Environmental Resources,Internet/Network,Wi-Fi connection unstable,High,2.31,10.26,Closed,Yes,Within 8 Hours
+HD0492,5/18/2026,Student,Registry,Registration,Unable to submit course registration,Medium,1.53,5.04,Closed,Yes,Within 8 Hours
+HD0493,6/23/2026,Student,College of Agricultural Management,Registration,Course registration error,Medium,2.59,2.45,Closed,Yes,Within 8 Hours
+HD0494,7/16/2026,Staff,College of Environmental Resources,Payment/Invoice,Outstanding invoice still showing after payment,Medium,5.94,9.73,In Progress,No,Within 8 Hours
+HD0495,1/15/2026,Student,College of Veterinary Medicine,Admission,Admission portal error,High,1.33,6.33,Closed,Yes,Within 8 Hours
+HD0496,7/21/2026,Student,College of Plant Science,Payment/Invoice,Payment confirmation delayed,Low,4.26,0.8,Closed,Yes,Within 8 Hours
+HD0497,3/28/2026,Staff,College of Animal Science,Software/MIS,Application error during transaction,Low,3.32,2.35,Closed,Yes,Within 8 Hours
+HD0498,2/27/2026,Staff,Postgraduate School,Student Information,Student information request,Medium,1.5,3.31,Closed,Yes,Within 8 Hours
+HD0499,8/17/2026,Postgraduate Student,College of Agricultural Management,Hardware,Desktop computer not starting,Low,10.21,38.56,In Progress,No,Beyond 8 Hours
+HD0500,1/27/2026,Postgraduate Student,Bursary,ID Card,Lost ID card replacement request,Medium,1.9,6.21,Closed,Yes,Within 8 Hours

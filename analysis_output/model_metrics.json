@@ -1,0 +1,11 @@
+{
+  "MAE_hours": 4.648176193237305,
+  "RMSE_hours": 6.709606105198282,
+  "R2": -0.12184715270996094,
+  "baseline_MAE_hours": 4.693056106567383,
+  "epochs_trained": 48,
+  "n_train": 228,
+  "n_val": 58,
+  "n_test": 72,
+  "note": "Trained on Resolved=='Yes' tickets only. Sample size is small, so treat R2/MAE as indicative rather than a precise estimate -- consider k-fold cross-validation before reporting a single number."
+}
