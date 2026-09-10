@@ -1,0 +1,64 @@
+{
+  "n_splits": 5,
+  "MAE_hours_mean": 4.216,
+  "MAE_hours_std": 0.657,
+  "MAE_hours_95pct_CI": [
+    3.64,
+    4.792
+  ],
+  "RMSE_hours_mean": 7.478,
+  "RMSE_hours_std": 1.446,
+  "R2_mean": -0.048,
+  "R2_std": 0.067,
+  "baseline_MAE_hours_mean": 4.298,
+  "baseline_MAE_hours_std": 0.638,
+  "model_beats_baseline": true,
+  "per_fold": [
+    {
+      "MAE_hours": 4.651914596557617,
+      "RMSE_hours": 6.718183910563356,
+      "R2": -0.12471747398376465,
+      "baseline_MAE_hours": 4.669722080230713,
+      "fold": 1,
+      "n_train": 228,
+      "n_test": 72
+    },
+    {
+      "MAE_hours": 5.079193115234375,
+      "RMSE_hours": 9.585693953201986,
+      "R2": -0.08982515335083008,
+      "baseline_MAE_hours": 5.172082901000977,
+      "fold": 2,
+      "n_train": 228,
+      "n_test": 72
+    },
+    {
+      "MAE_hours": 3.399479866027832,
+      "RMSE_hours": 5.800633941732279,
+      "R2": 0.05120742321014404,
+      "baseline_MAE_hours": 3.5509722232818604,
+      "fold": 3,
+      "n_train": 228,
+      "n_test": 72
+    },
+    {
+      "MAE_hours": 4.040982723236084,
+      "RMSE_hours": 8.133432560716697,
+      "R2": -0.05271577835083008,
+      "baseline_MAE_hours": 4.201690196990967,
+      "fold": 4,
+      "n_train": 229,
+      "n_test": 71
+    },
+    {
+      "MAE_hours": 3.9092161655426025,
+      "RMSE_hours": 7.153856701839171,
+      "R2": -0.02449214458465576,
+      "baseline_MAE_hours": 3.8980283737182617,
+      "fold": 5,
+      "n_train": 229,
+      "n_test": 71
+    }
+  ],
+  "note": "Each fold trains on ~80% of resolved tickets and tests on the held-out 20%. Compare MAE_hours_mean to baseline_MAE_hours_mean: if the model isn't clearly and consistently below baseline across folds (small std, non-overlapping CI), the single-split result earlier isn't a fluke -- the features genuinely lack signal."
+}

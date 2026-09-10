@@ -33,7 +33,7 @@ import seaborn as sns
 import torch
 from sklearn.compose import ColumnTransformer
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import KFold, train_test_split
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
@@ -211,6 +211,54 @@ class ResolutionMLP(nn.Module):
         return self.network(x).squeeze(1)
 
 
+def _train_mlp(
+    X_train: pd.DataFrame, y_train: pd.Series,
+    X_val: pd.DataFrame, y_val: pd.Series,
+    epochs: int, patience: int = 30,
+) -> tuple[nn.Module, ColumnTransformer, list[dict]]:
+    """Fit a preprocessor + MLP on (X_train, y_train), early-stopping on
+    (X_val, y_val). Shared by the single-split run and each CV fold so the
+    two can't drift apart.
+    """
+    preprocessor = ColumnTransformer([
+        ("categorical", OneHotEncoder(handle_unknown="ignore", sparse_output=False), CAT_FEATURES),
+        ("numeric", StandardScaler(), NUM_FEATURES),
+    ])
+    train_np = np.ascontiguousarray(preprocessor.fit_transform(X_train).astype("float32"))
+    val_np = np.ascontiguousarray(preprocessor.transform(X_val).astype("float32"))
+    train_x, val_x = map(torch.from_numpy, [train_np, val_np])
+    train_y = torch.from_numpy(y_train.to_numpy(dtype="float32").copy())
+    val_y = torch.from_numpy(y_val.to_numpy(dtype="float32").copy())
+
+    model = ResolutionMLP(train_x.shape[1])
+    optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=1e-4)
+    loss_fn = nn.HuberLoss()
+    loader = DataLoader(TensorDataset(train_x, train_y), batch_size=32, shuffle=True)
+    best_state, best_val, patience_left = None, float("inf"), patience
+    history = []
+    for epoch in range(1, epochs + 1):
+        model.train()
+        losses = []
+        for xb, yb in loader:
+            optimizer.zero_grad()
+            loss = loss_fn(model(xb), yb)
+            loss.backward()
+            optimizer.step()
+            losses.append(loss.item())
+        model.eval()
+        with torch.no_grad():
+            val_loss = loss_fn(model(val_x), val_y).item()
+        history.append({"epoch": epoch, "train_loss": float(np.mean(losses)), "val_loss": val_loss})
+        if val_loss < best_val - 1e-4:
+            best_val, best_state, patience_left = val_loss, copy.deepcopy(model.state_dict()), patience
+        else:
+            patience_left -= 1
+            if patience_left == 0:
+                break
+    model.load_state_dict(best_state)
+    return model, preprocessor, history
+
+
 def evaluate(model: nn.Module, X: torch.Tensor, y: torch.Tensor) -> dict:
     model.eval()
     with torch.no_grad():
@@ -230,44 +278,10 @@ def train_model(X: pd.DataFrame, y: pd.Series, output_dir: Path, epochs: int) ->
     X_train, X_val, y_train, y_val = train_test_split(
         X_train, y_train, test_size=0.20, random_state=SEED
     )
-    preprocessor = ColumnTransformer([
-        ("categorical", OneHotEncoder(handle_unknown="ignore", sparse_output=False), CAT_FEATURES),
-        ("numeric", StandardScaler(), NUM_FEATURES),
-    ])
-    train_np = np.ascontiguousarray(preprocessor.fit_transform(X_train).astype("float32"))
-    val_np = np.ascontiguousarray(preprocessor.transform(X_val).astype("float32"))
+    model, preprocessor, history = _train_mlp(X_train, y_train, X_val, y_val, epochs)
     test_np = np.ascontiguousarray(preprocessor.transform(X_test).astype("float32"))
-    train_x, val_x, test_x = map(torch.from_numpy, [train_np, val_np, test_np])
-    train_y = torch.from_numpy(y_train.to_numpy(dtype="float32").copy())
-    val_y = torch.from_numpy(y_val.to_numpy(dtype="float32").copy())
+    test_x = torch.from_numpy(test_np)
     test_y = torch.from_numpy(y_test.to_numpy(dtype="float32").copy())
-
-    model = ResolutionMLP(train_x.shape[1])
-    optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=1e-4)
-    loss_fn = nn.HuberLoss()
-    loader = DataLoader(TensorDataset(train_x, train_y), batch_size=32, shuffle=True)
-    best_state, best_val, patience_left = None, float("inf"), 30
-    history = []
-    for epoch in range(1, epochs + 1):
-        model.train()
-        losses = []
-        for xb, yb in loader:
-            optimizer.zero_grad()
-            loss = loss_fn(model(xb), yb)
-            loss.backward()
-            optimizer.step()
-            losses.append(loss.item())
-        model.eval()
-        with torch.no_grad():
-            val_loss = loss_fn(model(val_x), val_y).item()
-        history.append({"epoch": epoch, "train_loss": float(np.mean(losses)), "val_loss": val_loss})
-        if val_loss < best_val - 1e-4:
-            best_val, best_state, patience_left = val_loss, copy.deepcopy(model.state_dict()), 30
-        else:
-            patience_left -= 1
-            if patience_left == 0:
-                break
-    model.load_state_dict(best_state)
 
     metrics = evaluate(model, test_x, test_y)
     baseline = np.full(len(y_test), y_train.median(), dtype="float32")
@@ -277,11 +291,14 @@ def train_model(X: pd.DataFrame, y: pd.Series, output_dir: Path, epochs: int) ->
     metrics["n_val"] = int(len(y_val))
     metrics["n_test"] = int(len(y_test))
     metrics["note"] = (
-        "Trained on Resolved=='Yes' tickets only. Sample size is small, so treat "
-        "R2/MAE as indicative rather than a precise estimate -- consider k-fold "
-        "cross-validation before reporting a single number."
+        "Trained on Resolved=='Yes' tickets only. This is a single train/test "
+        "split, so treat R2/MAE as indicative rather than precise -- see "
+        "cv_metrics.json for a 5-fold cross-validated estimate."
     )
-    torch.save({"model_state": model.state_dict(), "input_dim": train_x.shape[1]}, output_dir / "resolution_model.pt")
+    torch.save(
+        {"model_state": model.state_dict(), "input_dim": len(preprocessor.get_feature_names_out())},
+        output_dir / "resolution_model.pt",
+    )
     (output_dir / "model_metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
 
     hist = pd.DataFrame(history)
@@ -293,11 +310,84 @@ def train_model(X: pd.DataFrame, y: pd.Series, output_dir: Path, epochs: int) ->
     return metrics
 
 
+def cross_validate_model(X: pd.DataFrame, y: pd.Series, output_dir: Path, epochs: int, n_splits: int = 5) -> dict:
+    """5-fold CV: each fold holds out 1/5 of the resolved tickets as a test
+    set, trains on the rest (with its own internal train/early-stop-val
+    split), and evaluates on the held-out fold. This gives a mean +/- spread
+    instead of one single-split number that can swing with the random seed.
+    """
+    kfold = KFold(n_splits=n_splits, shuffle=True, random_state=SEED)
+    X_reset, y_reset = X.reset_index(drop=True), y.reset_index(drop=True)
+
+    fold_results = []
+    for fold_idx, (train_idx, test_idx) in enumerate(kfold.split(X_reset), start=1):
+        X_fold_train, X_test = X_reset.iloc[train_idx], X_reset.iloc[test_idx]
+        y_fold_train, y_test = y_reset.iloc[train_idx], y_reset.iloc[test_idx]
+        # Carve an internal early-stopping validation set out of this fold's training data.
+        X_train, X_val, y_train, y_val = train_test_split(
+            X_fold_train, y_fold_train, test_size=0.20, random_state=SEED
+        )
+        model, preprocessor, _ = _train_mlp(X_train, y_train, X_val, y_val, epochs, patience=20)
+
+        test_np = np.ascontiguousarray(preprocessor.transform(X_test).astype("float32"))
+        test_x = torch.from_numpy(test_np)
+        test_y = torch.from_numpy(y_test.to_numpy(dtype="float32").copy())
+
+        fold_metrics = evaluate(model, test_x, test_y)
+        baseline_pred = np.full(len(y_test), y_fold_train.median(), dtype="float32")
+        fold_metrics["baseline_MAE_hours"] = float(mean_absolute_error(y_test, baseline_pred))
+        fold_metrics["fold"] = fold_idx
+        fold_metrics["n_train"] = int(len(y_train))
+        fold_metrics["n_test"] = int(len(y_test))
+        fold_results.append(fold_metrics)
+        print(
+            f"  Fold {fold_idx}/{n_splits}: MAE={fold_metrics['MAE_hours']:.2f}h "
+            f"(baseline={fold_metrics['baseline_MAE_hours']:.2f}h) R2={fold_metrics['R2']:.3f}"
+        )
+
+    def _mean_std(key: str) -> tuple[float, float]:
+        values = np.array([f[key] for f in fold_results])
+        return float(values.mean()), float(values.std(ddof=1))
+
+    mae_mean, mae_std = _mean_std("MAE_hours")
+    rmse_mean, rmse_std = _mean_std("RMSE_hours")
+    r2_mean, r2_std = _mean_std("R2")
+    baseline_mean, baseline_std = _mean_std("baseline_MAE_hours")
+    # Rough 95% CI on the mean using a normal approximation (n_splits is small,
+    # so treat this as indicative, not a rigorous confidence interval).
+    ci_95_half_width = 1.96 * mae_std / np.sqrt(n_splits)
+
+    summary = {
+        "n_splits": n_splits,
+        "MAE_hours_mean": round(mae_mean, 3),
+        "MAE_hours_std": round(mae_std, 3),
+        "MAE_hours_95pct_CI": [round(mae_mean - ci_95_half_width, 3), round(mae_mean + ci_95_half_width, 3)],
+        "RMSE_hours_mean": round(rmse_mean, 3),
+        "RMSE_hours_std": round(rmse_std, 3),
+        "R2_mean": round(r2_mean, 3),
+        "R2_std": round(r2_std, 3),
+        "baseline_MAE_hours_mean": round(baseline_mean, 3),
+        "baseline_MAE_hours_std": round(baseline_std, 3),
+        "model_beats_baseline": bool(mae_mean < baseline_mean),
+        "per_fold": fold_results,
+        "note": (
+            "Each fold trains on ~80% of resolved tickets and tests on the "
+            "held-out 20%. Compare MAE_hours_mean to baseline_MAE_hours_mean: "
+            "if the model isn't clearly and consistently below baseline across "
+            "folds (small std, non-overlapping CI), the single-split result "
+            "earlier isn't a fluke -- the features genuinely lack signal."
+        ),
+    }
+    (output_dir / "cv_metrics.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    return summary
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--csv", type=Path, default=Path("FUNAAB_ICTREC_Helpdesk_500_Instances.csv"))
     parser.add_argument("--output", type=Path, default=Path("analysis_output"))
     parser.add_argument("--epochs", type=int, default=400)
+    parser.add_argument("--cv-folds", type=int, default=5)
     args = parser.parse_args()
     seed_everything()
     df, resolved_df, X, y = load_and_prepare(args.csv)
@@ -306,7 +396,12 @@ def main() -> None:
         f"(excluded {len(df) - len(resolved_df)} still-open tickets)."
     )
     print("Observed summary:", json.dumps(save_exploration(df, resolved_df, args.output), indent=2))
-    print("Model metrics:", json.dumps(train_model(X, y, args.output, args.epochs), indent=2))
+    print("Model metrics (single split):", json.dumps(train_model(X, y, args.output, args.epochs), indent=2))
+    print(f"Running {args.cv_folds}-fold cross-validation...")
+    cv_summary = cross_validate_model(X, y, args.output, args.epochs, n_splits=args.cv_folds)
+    print("Cross-validation summary:", json.dumps(
+        {k: v for k, v in cv_summary.items() if k != "per_fold"}, indent=2
+    ))
 
 
 if __name__ == "__main__":

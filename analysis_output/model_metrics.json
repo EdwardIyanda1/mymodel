@@ -7,5 +7,5 @@
   "n_train": 228,
   "n_val": 58,
   "n_test": 72,
-  "note": "Trained on Resolved=='Yes' tickets only. Sample size is small, so treat R2/MAE as indicative rather than a precise estimate -- consider k-fold cross-validation before reporting a single number."
+  "note": "Trained on Resolved=='Yes' tickets only. This is a single train/test split, so treat R2/MAE as indicative rather than precise -- see cv_metrics.json for a 5-fold cross-validated estimate."
 }
